@@ -1,0 +1,19 @@
+.header .information{
+    background-color: var(--black-transparent);
+    display: flex;
+    justify-content: right;
+    gap: 2rem;
+}
+.information img{
+    width: 10rem;
+}
+
+
+
+/* .header .navigation{
+    background-color: var(--black);
+}
+.navigation__list{
+    color: var(--white);
+    display: flex;
+} */

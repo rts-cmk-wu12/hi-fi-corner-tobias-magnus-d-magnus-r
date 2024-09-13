@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hifi - Homepage</title>
     <link rel="stylesheet" href="css/index.css">
-    
+
 </head>
+
 <body>
-    <header> <!-- InformationBar-->
-        <div>
-            <a href="https://maps.app.goo.gl/Ev5athXpk7HgQfLQA"><img src="" alt="Location"></a>
-            <a href="tel:0000000000"><img src="" alt="Phone"></a>
-            <a href="mailto:email@example.com"><img src="" alt="Mail"></a>
-            <a href=""><div>
-                <img src="" alt="Subscribe">
+    <header class="header"> <!-- InformationBar-->
+        <div class="information">
+            <a class="information__link" href="https://maps.app.goo.gl/Ev5athXpk7HgQfLQA"><img src="img/icons/location.svg" alt="Location"></a>
+            <a class="information__link" href="tel:0000000000"><img src="img/icons/phone.svg" alt="Phone"></a>
+            <a class="information__link" href="mailto:email@example.com"><img src="img/icons/mail.svg" alt="Mail"></a>
+            <button class="information__subscription" href="">
                 <p>Subscribe</p>
-            </div></a>
+                <img src="img/icons/subscribe.svg" alt="subscribe">
+            </button>
         </div>
-        <nav> <!-- Navbar -->
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="?nosite">about us</a></li>
-                <li><a href="?nosite">brands</a></li>
-                <li><a href="?nosite">blog</a></li>
-                <li><a href="?nosite">events</a></li>
-                <li><a href="?nosite">shop</a></li>
-                <li><a href="?nosite">contact us</a></li>
+        <nav class="navigation"> <!-- Navbar -->
+            <ul class="navigation__list">
+                <li class="navigation__link"><a class="navigation__link" href="index.html">home</a></li>
+                <li class="navigation__link"><a class="navigation__link" href="?nosite">about us</a></li>
+                <li class="navigation__link"><a class="navigation__link" href="?nosite">brands</a></li>
+                <li class="navigation__link"><a class="navigation__link" href="?nosite">blog</a></li>
+                <li class="navigation__link"><a class="navigation__link" href="?nosite">events</a></li>
+                <li class="navigation__link"><a class="navigation__link" href="?nosite">shop</a></li>
+                <li class="navigation__link"><a class="navigation__link" href="?nosite">contact us</a></li>
             </ul>
         </nav>
     </header>
@@ -37,4 +39,5 @@
 
     </footer>
 </body>
+
 </html>
