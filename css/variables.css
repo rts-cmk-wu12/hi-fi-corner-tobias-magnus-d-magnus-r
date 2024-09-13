@@ -22,6 +22,9 @@
     --red:#ff0000;
     --gray:#e1e1e1;
     --black:#000;
+    
+    /* Transparent */
+    --black-transparent:#00000030;
 
     /* font weight */
     --text-bold: bold;
