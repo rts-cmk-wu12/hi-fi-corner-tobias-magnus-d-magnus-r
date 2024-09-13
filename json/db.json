@@ -1,3 +1,21 @@
 {
-    
+    "image-slider": [
+        {
+            "id": 1,
+            "image": "../img/cd_afspilere/creek_classic_cd.jpg",
+            "title": ""
+            
+        },
+        {
+            "id": 2,
+            "image": "",
+            "title": ""
+            
+        },
+        {
+            "id": 3,
+            "image": "",
+            "title": ""
+        }
+    ]
 }
