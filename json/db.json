@@ -1,21 +1,292 @@
 {
-    "image-slider": [
-        {
-            "id": 1,
-            "image": "../img/cd_afspilere/creek_classic_cd.jpg",
-            "title": ""
-            
-        },
-        {
-            "id": 2,
-            "image": "",
-            "title": ""
-            
-        },
-        {
-            "id": 3,
-            "image": "",
-            "title": ""
-        }
-    ]
+  "products": [
+    {
+      "id": 1,
+      "name": "Creek Classic CD",
+      "price": 299.99,
+      "brand": "Creek",
+      "category": "CD Afspillere",
+      "imageSrc": "img/cd_afspillere/creek_classic_cd.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Creek Destiny CD",
+      "price": 399.99,
+      "brand": "Creek",
+      "category": "CD Afspillere",
+      "imageSrc": "img/cd_afspillere/creek_Destiny_CD.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Creek Evo CD",
+      "price": 349.99,
+      "brand": "Creek",
+      "category": "CD Afspillere",
+      "imageSrc": "img/cd_afspillere/creek_evo_cd.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Exposure 2010S CD",
+      "price": 299.99,
+      "brand": "Exposure",
+      "category": "CD Afspillere",
+      "imageSrc": "img/cd_afspillere/Exp_2010S_CD.gif"
+    },
+    {
+      "id": 5,
+      "name": "Creek Classic",
+      "price": 299.99,
+      "brand": "Creek",
+      "category": "DVD Afspillere",
+      "imageSrc": "img/dvdafspillere/creek_classic.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Exposure 2010S",
+      "price": 399.99,
+      "brand": "Exposure",
+      "category": "DVD Afspillere",
+      "imageSrc": "img/dvdafspillere/exposure_2010S.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Parasound D200",
+      "price": 499.99,
+      "brand": "Parasound",
+      "category": "DVD Afspillere",
+      "imageSrc": "img/dvdafspillere/parasound_d200.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Parasound Halo D3",
+      "price": 599.99,
+      "brand": "Parasound",
+      "category": "DVD Afspillere",
+      "imageSrc": "img/dvdafspillere/parasound_halod3.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Manley Mahi",
+      "price": 799.99,
+      "brand": "Manley",
+      "category": "Effektforstærkere",
+      "imageSrc": "img/effektforstaerkere/manley_mahi.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Manley Neo-Classic 300B",
+      "price": 899.99,
+      "brand": "Manley",
+      "category": "Effektforstærkere",
+      "imageSrc": "img/effektforstaerkere/manley_neoclassic300b.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Manley Snapper",
+      "price": 999.99,
+      "brand": "Manley",
+      "category": "Effektforstærkere",
+      "imageSrc": "img/effektforstaerkere/manley_snapper.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Parasound Halo A23",
+      "price": 1099.99,
+      "brand": "Parasound",
+      "category": "Effektforstærkere",
+      "imageSrc": "img/effektforstaerkere/parasound_haloa23.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Creek OBH-22 Passive Preamp",
+      "price": 199.99,
+      "brand": "Creek",
+      "category": "Forforstærkere",
+      "imageSrc": "img/forforstaerkere/Creek_OBH_22_Passive_Preamp.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Parasound Classic 7100",
+      "price": 299.99,
+      "brand": "Parasound",
+      "category": "Forforstærkere",
+      "imageSrc": "img/forforstaerkere/parasound_classic7100.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Parasound Halo P3",
+      "price": 399.99,
+      "brand": "Parasound",
+      "category": "Forforstærkere",
+      "imageSrc": "img/forforstaerkere/parasound_halop3.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Project Pre Box",
+      "price": 499.99,
+      "brand": "Project",
+      "category": "Forforstærkere",
+      "imageSrc": "img/forforstaerkere/Project_prebox.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Bösendorfer VCS Wall",
+      "price": 599.99,
+      "brand": "Bösendorfer",
+      "category": "Højtalere",
+      "imageSrc": "img/hojtalere/boesendorfer_vcs_wall.gif"
+    },
+    {
+      "id": 18,
+      "name": "Epos M5",
+      "price": 699.99,
+      "brand": "Epos",
+      "category": "Højtalere",
+      "imageSrc": "img/hojtalere/epos_m5.gif"
+    },
+    {
+      "id": 19,
+      "name": "Harbeth HL7ES2",
+      "price": 799.99,
+      "brand": "Harbeth",
+      "category": "Højtalere",
+      "imageSrc": "img/hojtalere/harbeth_hl7es2.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Harbeth Monitor 30",
+      "price": 899.99,
+      "brand": "Harbeth",
+      "category": "Højtalere",
+      "imageSrc": "img/hojtalere/harbeth_monitor30.jpg"
+    },
+    {
+      "id": 21,
+      "name": "Harbeth P3ES2",
+      "price": 999.99,
+      "brand": "Harbeth",
+      "category": "Højtalere",
+      "imageSrc": "img/hojtalere/harbeth_p3es2.jpg"
+    },
+    {
+      "id": 22,
+      "name": "Creek A50I",
+      "price": 1099.99,
+      "brand": "Creek",
+      "category": "Int. Forstærkere",
+      "imageSrc": "img/int_forstaerkere/creek_a50I.jpg"
+    },
+    {
+      "id": 23,
+      "name": "Creek Classic 5350SE",
+      "price": 1199.99,
+      "brand": "Creek",
+      "category": "Int. Forstærkere",
+      "imageSrc": "img/int_forstaerkere/creek_classic5350SE.jpg"
+    },
+    {
+      "id": 24,
+      "name": "Creek Destiny Amp",
+      "price": 1299.99,
+      "brand": "Creek",
+      "category": "Int. Forstærkere",
+      "imageSrc": "img/int_forstaerkere/creek_destinyamp.jpg"
+    },
+    {
+      "id": 25,
+      "name": "Manley Snapper",
+      "price": 1399.99,
+      "brand": "Manley",
+      "category": "Int. Forstærkere",
+      "imageSrc": "img/int_forstaerkere/manley_snapper.jpg"
+    },
+    {
+      "id": 26,
+      "name": "Manley Stingray",
+      "price": 1499.99,
+      "brand": "Manley",
+      "category": "Int. Forstærkere",
+      "imageSrc": "img/int_forstaerkere/Manley_Stingray.jpg"
+    },
+    {
+      "id": 27,
+      "name": "Pro-Ject Debut 3 BL",
+      "price": 1599.99,
+      "brand": "Pro-Ject",
+      "category": "Pladespillere",
+      "imageSrc": "img/pladespillere/Pro_ject_Debut_3_bl.jpg"
+    },
+    {
+      "id": 28,
+      "name": "Pro-Ject Debut III Red",
+      "price": 1699.99,
+      "brand": "Pro-Ject",
+      "category": "Pladespillere",
+      "imageSrc": "img/pladespillere/Pro_ject_Debut_III_red_1.jpg"
+    },
+    {
+      "id": 29,
+      "name": "Pro-Ject Debut III Yellow",
+      "price": 1799.99,
+      "brand": "Pro-Ject",
+      "category": "Pladespillere",
+      "imageSrc": "img/pladespillere/Pro_ject_Debut_III_yellow_1.jpg"
+    },
+    {
+      "id": 30,
+      "name": "Pro-Ject RPM 5",
+      "price": 1899.99,
+      "brand": "Pro-Ject",
+      "category": "Pladespillere",
+      "imageSrc": "img/pladespillere/Pro_ject_rpm_5.jpg"
+    },
+    {
+      "id": 31,
+      "name": "Pro-Ject RPM 10",
+      "price": 1999.99,
+      "brand": "Pro-Ject",
+      "category": "Pladespillere",
+      "imageSrc": "img/pladespillere/Pro_ject_rpm10.jpg"
+    },
+    {
+      "id": 32,
+      "name": "Jolida JD102B",
+      "price": 2099.99,
+      "brand": "Jolida",
+      "category": "Rørforstærkere",
+      "imageSrc": "img/roer_forstaerkere/jolida_JD102b.jpg"
+    },
+    {
+      "id": 33,
+      "name": "Jolida JD202A",
+      "price": 2199.99,
+      "brand": "Jolida",
+      "category": "Rørforstærkere",
+      "imageSrc": "img/roer_forstaerkere/jolida_JD202a.jpg"
+    },
+    {
+      "id": 34,
+      "name": "Jolida JD300B",
+      "price": 2299.99,
+      "brand": "Jolida",
+      "category": "Rørforstærkere",
+      "imageSrc": "img/roer_forstaerkere/jolida_JD300b.jpg"
+    },
+    {
+      "id": 35,
+      "name": "Jolida JD302B",
+      "price": 2399.99,
+      "brand": "Jolida",
+      "category": "Rørforstærkere",
+      "imageSrc": "img/roer_forstaerkere/jolida_JD302b.jpg"
+    },
+    {
+      "id": 36,
+      "name": "Jolida JD502B",
+      "price": 2499.99,
+      "brand": "Jolida",
+      "category": "Rørforstærkere",
+      "imageSrc": "img/roer_forstaerkere/jolida_JD502b.jpg"
+    }
+  ]
 }
