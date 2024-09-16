@@ -1,0 +1,64 @@
+.socialDiv{
+    background-color: red;
+    display: flex;
+    width: 100vw;
+}
+.socialDiv .facebook-div{
+    background-image: url(../../img/random/COLOURBOX40527017.jpg);
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    width: 33.3%;
+    height: 25rem;
+}
+.socialDiv .b-div{
+    background-image: url(../../img/random/headphones-black-and-white-hi-tech-sennheiser-wallpaper-preview.jpg);
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    width: 33.4%;
+    height: 25rem;
+}
+.socialDiv .twitter-div{
+    background-image: url(../../img/random/33rpm-audio-music-player-phonograph-wallpaper-preview.jpg);
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    width: 33.3%;
+    height: 25rem;
+}
+.socialDivInfo{
+    background-color: var(--dark-gray);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.socialDivInfo div{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+.socialDivInfo div p{
+    width: 20rem;
+    font-family: var(--font-light);
+}
+.socialDivInfo div h3{
+    border: 1px solid var(--white);
+    padding: 0.6rem;
+    color: var(--light-brown);
+    margin-bottom: 1rem;
+    font-family: var(--font-bold);
+
+}
