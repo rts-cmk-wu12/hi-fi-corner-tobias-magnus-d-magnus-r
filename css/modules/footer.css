@@ -1,7 +1,7 @@
 .footer{
     width: 100vw;
     background-color: var(--light-brown);
-    position: absolute;
+    position: relative;
     bottom: 0;
     display: flex;
     justify-content: space-between;

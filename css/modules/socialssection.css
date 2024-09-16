@@ -33,3 +33,32 @@
     width: 33.3%;
     height: 25rem;
 }
+.socialDivInfo{
+    background-color: var(--dark-gray);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--white);
+    height: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.socialDivInfo div{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 10rem;
+    align-items: center;
+    justify-content: center;
+}
+.socialDivInfo div p{
+    width: 20rem;
+    font-family: var(--font-light);
+}
+.socialDivInfo div h3{
+    border: 1px solid var(--white);
+    padding: 0.6rem;
+    color: var(--light-brown);
+    margin-bottom: 1rem;
+    font-family: var(--font-bold);
+
+}
