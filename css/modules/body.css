@@ -1,3 +1,6 @@
 .body-background--amplifier{
-    background-image: url(../img/baggrunde/amplifier.jpg);
+    background-image: url(/img/baggrunde/Colourbox-hifi-speaker.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }

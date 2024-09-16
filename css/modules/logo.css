@@ -1,0 +1,12 @@
+.logo{
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+
+.logo__text{
+    text-transform: uppercase;
+    color: var(--white);
+
+}

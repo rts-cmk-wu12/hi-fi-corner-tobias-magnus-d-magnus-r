@@ -4,12 +4,13 @@
     justify-content: right;
     gap: 2rem;
 }
+
 .information img{
     max-width: 4rem;
     max-height: 4rem;
 }
 
-.header .information__subscription{
+.information__subscription{
     background-color: var(--blue);
     display: flex;
     height: 4rem;
@@ -17,7 +18,7 @@
     border-radius: 9px;
     border: 0rem;
 }
-.header .information__subscription img{
+.information__subscription img{
     width: 3rem;
 }
 
