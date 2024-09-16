@@ -28,13 +28,13 @@
     max-width: 3rem;
     border-right: 1px solid black;
     padding-right: 1rem;
+    margin-right: 1rem;
 }
 
-.information__subscription p{
+.information__subscription{
     font-family: var(--font-bold);
     font-size: 1.5rem;
     color: var(--white);
-    margin-left: 1rem;
 }
 
 .header .navigation{

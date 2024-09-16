@@ -4,6 +4,9 @@
     margin-block: 6rem;
 }
 
+.logo__image{
+    width: 100%;
+}
 
 .logo__text{
     text-transform: uppercase;
