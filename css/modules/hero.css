@@ -1,0 +1,15 @@
+.hero {
+    background-image: url(/img/baggrunde/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-block: 6rem;
+}
+
+.hero__text {
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--font-light);
+    color: var(--white);
+    text-transform: uppercase;
+}

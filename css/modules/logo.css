@@ -1,12 +1,12 @@
 .logo{
     max-width: fit-content;
     margin: auto;
-    margin-top: 2rem;
+    margin-block: 6rem;
 }
 
 
 .logo__text{
     text-transform: uppercase;
     color: var(--white);
-
+    font-family: var(--font-normal);
 }
