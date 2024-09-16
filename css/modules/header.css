@@ -5,10 +5,21 @@
     gap: 2rem;
 }
 .information img{
-    width: 10rem;
+    max-width: 4rem;
+    max-height: 4rem;
 }
 
-
+.header .information__subscription{
+    background-color: var(--blue);
+    display: flex;
+    height: 4rem;
+    width: 12rem;
+    border-radius: 9px;
+    border: 0rem;
+}
+.header .information__subscription img{
+    width: 3rem;
+}
 
 /* .header .navigation{
     background-color: var(--black);
