@@ -3,6 +3,10 @@
 
 
 /* Modules */
+@import url(modules/body.css);
 @import url(modules/header.css);
+@import url(modules/logo.css);
+@import url(modules/hero.css);
+@import url(modules/carousel.css);
 @import url(modules/socialssection.css);
 @import url(modules/footer.css);

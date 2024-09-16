@@ -29,15 +29,9 @@
     /* Transparent */
     --black-transparent:#00000030;
 
-    /* font weight */
-    --text-bold: bold;
-    --text-normal: normal;
-
     /* font family */
     --font-light: 'font-light';
     --font-normal: 'font-normal';
     --font-bold: 'font-bold';
     --font-extra-bold: 'font-extra-bold';
-
-    
 }
