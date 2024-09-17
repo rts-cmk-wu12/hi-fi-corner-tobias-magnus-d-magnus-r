@@ -3,7 +3,7 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-    font-size: 2em;
+    font-size: 4em;
     padding: 2%;
     background-color: aliceblue;
 }
@@ -12,6 +12,10 @@
 .slidergallery i {
     color: var(--light-brownish);
 }
+
+
+
+
 
 
 
