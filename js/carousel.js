@@ -55,9 +55,7 @@ fetch('http://localhost:3000/products')
     prevButton.addEventListener('click', () => {
       if (currentSlide > 0) {
         currentSlide--;
-        carouselTrack.style.transform = `translateX(-${
-          slideWidth * currentSlide
-        }px)`;
+        carouselTrack.style.transform = `translateX(-${slideWidth * currentSlide}px)`;
       }
     });
   })
