@@ -1,6 +1,7 @@
 @import url(variables.css);
 @import url(reset.css);
 
+<<<<<<< HEAD
 
 /* Modules */ 
 @import url(modules/body.css);
@@ -10,3 +11,7 @@
 @import url(modules/carousel.css);
 @import url(modules/socialssection.css);
 @import url(modules/footer.css);
+=======
+@import url(reset.css);
+
+>>>>>>> ad677b40aa731c277e4448b9272b70716130b9ea
