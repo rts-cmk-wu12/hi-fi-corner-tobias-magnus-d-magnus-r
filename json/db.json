@@ -234,35 +234,30 @@
       "imageSrc": "img/int_forstaerkere/Manley_Stingray.jpg",
       "description": "Manley Stingray integrated amplifier offers vintage design with modern performance."
     },
+
     {
       "id": 27,
-      "name": "Pro-Ject Debut 3 BL",
+      "name": "Pro-Ject Debut III",
       "price": 1599.99,
       "brand": "Pro-Ject",
       "category": "Pladespillere",
-      "imageSrc": "img/pladespillere/Pro_ject_Debut_3_bl.jpg",
-      "description": "Pro-Ject Debut 3 BL turntable delivers high-quality vinyl playback with sleek design."
+      "colors": [
+        {
+          "color": "Blue",
+          "imageSrc": "img/pladespillere/Pro_ject_Debut_3_bl.jpg"
+        },
+        {
+          "color": "Red",
+          "imageSrc": "img/pladespillere/Pro_ject_Debut_III_red_1.jpg"
+        },
+        {
+          "color": "Yellow",
+          "imageSrc": "img/pladespillere/Pro_ject_Debut_III_yellow_1.jpg"
+        }
+      ]
     },
     {
       "id": 28,
-      "name": "Pro-Ject Debut III Red",
-      "price": 1699.99,
-      "brand": "Pro-Ject",
-      "category": "Pladespillere",
-      "imageSrc": "img/pladespillere/Pro_ject_Debut_III_red_1.jpg",
-      "description": "Pro-Ject Debut III Red turntable offers vibrant design and superior sound quality."
-    },
-    {
-      "id": 29,
-      "name": "Pro-Ject Debut III Yellow",
-      "price": 1799.99,
-      "brand": "Pro-Ject",
-      "category": "Pladespillere",
-      "imageSrc": "img/pladespillere/Pro_ject_Debut_III_yellow_1.jpg",
-      "description": "Pro-Ject Debut III Yellow turntable combines bold design with high-fidelity sound."
-    },
-    {
-      "id": 30,
       "name": "Pro-Ject RPM 5",
       "price": 1899.99,
       "brand": "Pro-Ject",
@@ -271,7 +266,7 @@
       "description": "Pro-Ject RPM 5 turntable offers advanced features and exceptional vinyl playback."
     },
     {
-      "id": 31,
+      "id": 29,
       "name": "Pro-Ject RPM 10",
       "price": 1999.99,
       "brand": "Pro-Ject",
@@ -280,7 +275,7 @@
       "description": "Pro-Ject RPM 10 turntable delivers high-end performance and stunning design."
     },
     {
-      "id": 32,
+      "id": 30,
       "name": "Jolida JD102B",
       "price": 2099.99,
       "brand": "Jolida",
@@ -289,7 +284,7 @@
       "description": "Jolida JD102B tube amplifier offers warm and rich sound with classic design."
     },
     {
-      "id": 33,
+      "id": 31,
       "name": "Jolida JD202A",
       "price": 2199.99,
       "brand": "Jolida",
@@ -298,7 +293,7 @@
       "description": "Jolida JD202A tube amplifier provides high-fidelity sound and robust build quality."
     },
     {
-      "id": 34,
+      "id": 32,
       "name": "Jolida JD300B",
       "price": 2299.99,
       "brand": "Jolida",
@@ -307,7 +302,7 @@
       "description": "Jolida JD300B tube amplifier offers exceptional audio performance and vintage design."
     },
     {
-      "id": 35,
+      "id": 33,
       "name": "Jolida JD302B",
       "price": 2399.99,
       "brand": "Jolida",
@@ -316,7 +311,7 @@
       "description": "Jolida JD302B tube amplifier delivers high-quality sound with classic aesthetics."
     },
     {
-      "id": 36,
+      "id": 34,
       "name": "Jolida JD502B",
       "price": 2499.99,
       "brand": "Jolida",

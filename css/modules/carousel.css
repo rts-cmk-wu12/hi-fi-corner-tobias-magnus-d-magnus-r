@@ -1,0 +1,85 @@
+.carousel__track {
+    display: flex;
+    position: relative;
+}
+
+.carousel__item {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.carousel__image {
+    width: 100%;
+}
+
+.carousel__textcontainer {
+    z-index: 1;
+    position: absolute;
+    top: 4rem;
+    left: 6rem;
+}
+
+.carousel__product-title {
+    color: var(--light-brown);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.carousel__button {
+    background: none;
+    border: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.carousel__button--previous,
+.carousel__button--next {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel__button--previous {
+    left: 3rem;
+}
+
+.carousel__button--next {
+    right: 3rem;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+    color: var(--prev-next-button);
+    font-size: 5rem;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .carousel__textcontainer {
+        top: 2rem;
+        left: 2rem;
+    }
+
+    .carousel__product-title {
+        font-size: 1.5rem;
+    }
+
+    .carousel__button--previous,
+    .carousel__button--next {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .carousel__button--previous {
+        left: 1rem;
+    }
+
+    .carousel__button--next {
+        right: 1rem;
+    }
+
+    .fa-angle-right,
+    .fa-angle-left {
+        font-size: 3rem;
+    }
+}
