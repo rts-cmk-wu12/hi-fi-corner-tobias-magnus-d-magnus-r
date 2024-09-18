@@ -4,3 +4,9 @@
     background-position: center;
     background-size: cover;
 }
+.body-background--speakers{
+    background-image: url(/img/baggrunde/speakers.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
