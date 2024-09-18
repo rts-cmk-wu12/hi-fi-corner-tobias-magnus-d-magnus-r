@@ -1,6 +1,7 @@
 .slidergallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: rpeat;
     align-items: center;
     justify-items: center;
     font-size: 4em;
