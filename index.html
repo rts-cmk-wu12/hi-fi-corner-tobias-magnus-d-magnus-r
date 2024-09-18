@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hifi - Homepage</title>
-    <script src="https://kit.fontawesome.com/c46cc5d0d4.js" crossorigin="anonymous"></script>
+    <!-- Fontawesome cdn import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/carousel.js" defer></script>
 </head>
 
 <body class="body-background--amplifier">
@@ -23,9 +26,10 @@
         </div>
         <nav class="navigation"> <!-- Navbar -->
             <ul class="navigation__list">
-                <li class="navigation__link"><a class="navigation__link navigation__active" href="index.html">home</a></li>
+                <li class="navigation__link"><a class="navigation__link navigation__active" href="index.html">home</a>
+                </li>
                 <li class="navigation__link"><a class="navigation__link" href="?nosite">about us</a></li>
-                <li class="navigation__link"><a class="navigation__link" href="?nosite">brands</a></li>
+                <li class="navigation__link"><a class="navigation__link" href="brands.html">brands</a></li>
                 <li class="navigation__link"><a class="navigation__link" href="?nosite">blog</a></li>
                 <li class="navigation__link"><a class="navigation__link" href="?nosite">events</a></li>
                 <li class="navigation__link"><a class="navigation__link" href="?nosite">shop</a></li>
@@ -47,13 +51,15 @@
             </h2>
         </section>
 
-        <div class="slidergallery">
-            <p class="slidergallery__item">PRIMALUNA SOUNDS</p>
-            <i class="fa-solid fa-chevron-left"></i>
-            <img src="https://fakeimg.pl/600x400" alt="placeholderimage">
-            <i class="fa-solid fa-chevron-right"></i>
-        </div>
-        
+        <section class="carousel" aria-label="Image carousel">
+            <button class="carousel__button carousel__button--previous"><i class="fa-solid fa-angle-left"></i></button>
+            <ul class="carousel__track">
+                <!-- Dynamic content -->
+            </ul>
+            <button class="carousel__button carousel__button--next"><i class="fa-solid fa-angle-right"></i></button>
+        </section>
+
+
         <div class="socialDiv">
             <div class="facebook-div socialDiv__item"><img src="img/icons/facebook-big.svg" alt="facebook"></div>
             <div class="b-div socialDiv__item"><img src="img/icons/b-big.svg" alt="b social"></div>
@@ -61,19 +67,27 @@
         </div>
         <div class="socialDivInfo">
             <div class="socialDivInfo__history">
-                <a href=""><h3>history</h3></a>
-                <p>established in the late 1960s, our family owned business is based in edinburgh and falkirk, servicing customers across the uk.</p>
+                <a href="">
+                    <h3>history</h3>
+                </a>
+                <p>established in the late 1960s, our family owned business is based in edinburgh and falkirk, servicing
+                    customers across the uk.</p>
             </div>
             <div class="socialDivInfo__news">
-                <a href=""><h3>news</h3></a>
+                <a href="">
+                    <h3>news</h3>
+                </a>
                 <p>check out our latest news stories for all the up to date hi-fi corner products and launches.</p>
             </div>
             <div class="socialDivInfo__shop">
-                <a href=""><h3>shop</h3></a>
+                <a href="">
+                    <h3>shop</h3>
+                </a>
                 <p>have a look in our online shop for great products and deals</p>
             </div>
         </div>
     </main>
+    
     <footer class="footer">
         <div class="footer__left">
             <!-- left -->
@@ -88,20 +102,20 @@
         </div>
         <div class="footer__right">
             <!-- right -->
-             <div class="footer__right__payment">
+            <div class="footer__right__payment">
                 <a href=""><img src="img/icons/worldpay.svg" alt="worldpay"></a>
                 <a href=""><img src="img/icons/visa.svg" alt="visa"></a>
                 <a href=""><img src="img/icons/maestro.svg" alt="mastercard"></a>
                 <a href=""><img src="img/icons/mastercard.svg" alt="matestro"></a>
                 <a href=""><img src="img/icons/jbc.svg" alt="jcb"></a>
                 <a href=""><img src="img/icons/paypal.svg" alt="paypal"></a>
-             </div>
-             <div class="footer__right__socials">
+            </div>
+            <div class="footer__right__socials">
                 <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
                 <a href=""><img src="img/icons/youtube.svg" alt="youtube"></a>
                 <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
                 <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
-             </div>
+            </div>
         </div>
     </footer>
 </body>

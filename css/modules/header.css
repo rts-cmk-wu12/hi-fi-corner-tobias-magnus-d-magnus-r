@@ -6,6 +6,11 @@
     height: 4rem;
 }
 
+.header .information--brands{
+    background-color: var(--black);
+    border-bottom: 0.5px solid var(--medium-gray);
+}
+
 .information img{
     max-width: 3.5rem;
     max-height: 3.5rem;

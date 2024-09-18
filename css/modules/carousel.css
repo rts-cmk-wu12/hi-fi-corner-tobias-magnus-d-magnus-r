@@ -1,0 +1,60 @@
+.carousel {
+    position: relative;
+    overflow: hidden;
+    max-height: 25rem;
+}
+
+.carousel__track {
+    display: flex;
+    transition: transform 0.5s ease;
+    list-style: none;
+}
+
+.carousel__item {
+    min-width: 100%;
+    position: relative;
+    background-color: var(--white);
+}
+
+.carousel__image {
+    width: 100%;
+    max-height: 25rem;
+    object-fit: contain;
+}
+
+.carousel__textcontainer {
+    text-align: center;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.carousel__product-title {
+    color: var(--light-brown);
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+.carousel__button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.carousel__button--previous {
+    left: 3rem;
+}
+
+.carousel__button--next {
+    right: 3rem;
+}
+
+.fa-angle-right,
+.fa-angle-left {
+    color: var(--prev-next-button);
+    font-size: 5rem;
+}
