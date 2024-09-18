@@ -14,6 +14,7 @@
 .information img{
     max-width: 3.5rem;
     max-height: 3.5rem;
+    padding: 5px;
 }
 
 .information__subscription{
@@ -44,7 +45,7 @@
 
 .header .navigation{
     background-color: var(--black);
-    height: 3rem;
+    height: max-content;
 }
 .navigation__list{
     color: var(--white);
@@ -56,7 +57,8 @@
     text-transform: uppercase;
 }
 .navigation__link{
-    margin-top: 1rem;
+    padding-top:  1.8rem;
+    padding-bottom: 2rem;
     font-family: var(--font-bold);
 }
 
