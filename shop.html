@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hifi - Shop</title>
     <link rel="stylesheet" href="css/shop.css">
 </head>
+
 <body>
-        <header class="header"> <!-- InformationBar-->
-            <div class="information information--shoplist">
-                <div class="infomation__logo">
-                    <img class="information__logo-image" src="img/random/hifi-logo.svg" alt="Page Logo">
-                    <p class="information__logo-text">hificorner.co.uk</p>
-                </div>
-
-                <div>
-                    <input type="search" name="search" id="information__search">
-                    <span><img src="#" alt="Profile icon">Account</span>
-                    <a class="information__link" href="https://maps.app.goo.gl/Ev5athXpk7HgQfLQA"><img src="img/icons/location.svg"
-                            alt="Location"></a>
-                    <a class="information__link" href="tel:0000000000"><img src="img/icons/phone.svg" alt="Phone"></a>
-                    <a class="information__link" href="mailto:email@example.com"><img src="img/icons/mail.svg" alt="Mail"></a>
-                </div>
-
+    <header class="header"> <!-- InformationBar-->
+        <div class="header__information header__information--alternative">
+            <div class="logo">
+                <img class="logo__image" src="img/random/hifi-logo.svg" alt="hifi logo">
+                <p class="logo__text">hificorner.co.uk</p>
             </div>
+            <div class="header__information-container">
+                <a class="header__link" href="https://maps.app.goo.gl/Ev5athXpk7HgQfLQA">
+                    <img class="header__image" src="img/icons/location.svg" alt="Location">
+                </a>
 
+                <a class="header__link" href="tel:0000000000">
+                    <img class="header__image" src="img/icons/phone.svg" alt="Phone">
+                </a>
 
-            <nav class="navigation"> <!-- Navbar -->
-                <ul class="navigation__list">
-                    <li class="navigation__link"><a class="navigation__link" href="index.html">home</a></li>
-                    <li class="navigation__link"><a class="navigation__link" href="?nosite">about us</a></li>
-                    <li class="navigation__link"><a class="navigation__link" href="brands.html">brands</a>
-                    </li>
-                    <li class="navigation__link"><a class="navigation__link" href="?nosite">blog</a></li>
-                    <li class="navigation__link"><a class="navigation__link" href="?nosite">events</a></li>
-                    <li class="navigation__link"><a class="navigation__link navigation__active" href="shop.html">shop</a></li>
-                    <li class="navigation__link"><a class="navigation__link" href="?nosite">contact us</a></li>
-                </ul>
-            </nav>
-        </header>
+                <a class="header__link" href="mailto:email@example.com">
+                    <img class="header__image" src="img/icons/mail.svg" alt="Mail">
+                </a>
+
+                <button class="header__subscription">
+                    <img class="header__subscription-image" src="img/icons/subscribe.svg" alt="subscribe">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+
+        <nav class="header__navigation"> <!-- Navbar -->
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="index.html">home</a>
+                </li>
+
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="?nosite">about us</a>
+                </li>
+
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="brands.html">brands</a>
+                </li>
+
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="?nosite">blog</a>
+                </li>
+
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="?nosite">events</a>
+                </li>
+
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link header__navigation-link--active" href="shop.html">shop</a>
+                </li>
+
+                <li class="header__navigation-item">
+                    <a class="header__navigation-link" href="?nosite">contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
 
 
 
@@ -60,4 +89,5 @@
         </aside>
     </div>
 </body>
+
 </html>
