@@ -37,4 +37,7 @@
     --font-normal: 'font-normal';
     --font-bold: 'font-bold';
     --font-extra-bold: 'font-extra-bold';
+
+    /* filter */
+    --filter-invert: invert();
 }

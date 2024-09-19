@@ -32,6 +32,8 @@
     height: 2rem;
 }
 
+
 footer .footer__right{
     display: flex;
+    column-gap: 4rem;
 }

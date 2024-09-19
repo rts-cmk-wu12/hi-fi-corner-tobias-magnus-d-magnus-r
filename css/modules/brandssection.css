@@ -67,3 +67,29 @@
 .brands .brands__info h2, p{
     margin-bottom: 1.3rem;
 }
+
+
+/*  Logo section */
+.logo {
+display: flex;
+flex-direction: column;
+
+}
+
+.logo div {
+    display: flex;
+}
+
+.logo__item {
+    padding: 2%;
+    max-height: 50px;
+    max-width: 150px;
+    min-width: 30px;
+    min-height: 10px;
+}
+
+.logo__item--filter {
+    filter: var(--filter-invert);
+}
+
+
