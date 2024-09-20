@@ -24,13 +24,6 @@
     color: var(--white);
 }
 
-.header__navigation {
-    grid-column: 1 / 13;
-    grid-row: 2 / 3;
-    background-color: var(--black);
-}
-
-
 .header__information-container {
     grid-column: 10 / 11;
     display: flex;
@@ -38,9 +31,21 @@
     padding: 0.5rem 1rem;
 }
 
+.header__navigation {
+    grid-column: 1 / 13;
+    grid-row: 2 / 3;
+    background-color: var(--black);
+}
+
+
+
 
 
 /* Styling for header */
+
+.header__image {
+    max-height: 2rem;
+}
 
 .header__subscription {
     display: flex;
