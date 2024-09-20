@@ -1,3 +1,4 @@
+/* Defining header grid */
 .header {
     display: grid;
     grid-row: repeat(2, 1fr);
@@ -12,9 +13,22 @@
     background-color: var(--black-transparent);
 }
 
-.header__information--brands {
+.header__information--alternative {
     background-color: var(--black);
     border-bottom: 0.5px solid var(--medium-gray);
+}
+
+.header__information-logo{
+    grid-column: 1 / 1;
+    padding: 0.5rem 0 0 1rem;
+    color: var(--white);
+}
+
+.header__information-container {
+    grid-column: 10 / 11;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .header__navigation {
@@ -24,16 +38,11 @@
 }
 
 
-.header__information-container {
-    grid-column: 10 / 11;
-    display: flex;
-    gap: 1rem;
-    padding: 0.5rem 1rem;
-}
 
 
 
 /* Styling for header */
+
 .header__image {
     max-height: 2rem;
 }
