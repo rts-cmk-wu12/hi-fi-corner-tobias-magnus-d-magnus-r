@@ -1,247 +1,480 @@
 {
-  "products": [
+  "manufacturer": [
     {
       "id": 1,
-      "name": "Creek Classic CD",
-      "price": 299.99,
-      "brand": "Creek",
-      "category": "CD Afspillere",
-      "imageSrc": "img/cd_afspillere/creek_classic_cd.jpg",
-      "description": "A high-quality CD player from Creek with classic design and superior sound quality."
+      "name": "creek"
     },
     {
       "id": 2,
-      "name": "Creek Destiny CD",
-      "price": 399.99,
-      "brand": "Creek",
-      "category": "CD Afspillere",
-      "imageSrc": "img/cd_afspillere/creek_Destiny_CD.jpg",
-      "description": "The Destiny CD player from Creek offers exceptional audio performance and sleek design."
+      "name": "exposure"
     },
     {
       "id": 3,
-      "name": "Creek Evo CD",
-      "price": 349.99,
-      "brand": "Creek",
-      "category": "CD Afspillere",
-      "imageSrc": "img/cd_afspillere/creek_evo_cd.jpg",
-      "description": "Creek Evo CD player combines modern technology with high-fidelity sound."
+      "name": "parasound"
     },
     {
       "id": 4,
-      "name": "Exposure 2010S CD",
-      "price": 299.99,
-      "brand": "Exposure",
-      "category": "CD Afspillere",
-      "imageSrc": "img/cd_afspillere/Exp_2010S_CD.gif",
-      "description": "Exposure 2010S CD player delivers precise and detailed audio playback."
+      "name": "manley"
     },
     {
       "id": 5,
-      "name": "Creek Classic",
-      "price": 299.99,
-      "brand": "Creek",
-      "category": "DVD Afspillere",
-      "imageSrc": "img/dvdafspillere/creek_classic.jpg",
-      "description": "Creek Classic DVD player offers reliable performance and high-quality video output."
+      "name": "project"
     },
     {
       "id": 6,
-      "name": "Exposure 2010S",
-      "price": 399.99,
-      "brand": "Exposure",
-      "category": "DVD Afspillere",
-      "imageSrc": "img/dvdafspillere/exposure_2010S.jpg",
-      "description": "Exposure 2010S DVD player provides excellent video and audio quality."
+      "name": "boesendorfer"
     },
     {
       "id": 7,
-      "name": "Parasound D200",
-      "price": 499.99,
-      "brand": "Parasound",
-      "category": "DVD Afspillere",
-      "imageSrc": "img/dvdafspillere/parasound_d200.jpg",
-      "description": "Parasound D200 DVD player offers superior video playback and advanced features."
+      "name": "epos"
     },
     {
       "id": 8,
-      "name": "Parasound Halo D3",
-      "price": 599.99,
-      "brand": "Parasound",
-      "category": "DVD Afspillere",
-      "imageSrc": "img/dvdafspillere/parasound_halod3.jpg",
-      "description": "Parasound Halo D3 DVD player delivers high-definition video and exceptional audio."
+      "name": "harbeth"
     },
     {
       "id": 9,
-      "name": "Manley Mahi",
-      "price": 799.99,
-      "brand": "Manley",
-      "category": "Effektforstærkere",
+      "name": "jolida"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Creek Classic CD",
+      "manufacturerId": 1,
+      "price": 279.99,
+      "category": "CD Players",
+      "imageSrc": "img/cd_afspillere/creek_classic_cd.jpg",
+      "description": "A high-quality CD player from Creek with classic design and superior sound quality.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      },
+      "discountedPrice": 209.99
+    },
+    {
+      "id": 2,
+      "title": "Creek Destiny CD",
+      "manufacturerId": 1,
+      "price": 379.99,
+      "category": "CD Players",
+      "imageSrc": "img/cd_afspillere/creek_Destiny_CD.jpg",
+      "description": "The Destiny CD player from Creek offers exceptional audio performance and sleek design.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      },
+      "discountedPrice": 284.99
+    },
+    {
+      "id": 3,
+      "title": "Creek Evo CD",
+      "manufacturerId": 1,
+      "price": 329.99,
+      "category": "CD Players",
+      "imageSrc": "img/cd_afspillere/creek_evo_cd.jpg",
+      "description": "Creek Evo CD player combines modern technology with high-fidelity sound.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Exposure 2010S CD",
+      "price": 279.99,
+      "manufacturerId": 2,
+      "category": "CD Players",
+      "imageSrc": "img/cd_afspillere/Exp_2010S_CD.gif",
+      "description": "Exposure 2010S CD player delivers precise and detailed audio playback.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Creek Classic",
+      "price": 279.99,
+      "manufacturerId": 1,
+      "category": "DVD Players",
+      "imageSrc": "img/dvdafspillere/creek_classic.jpg",
+      "description": "Creek Classic DVD player offers reliable performance and high-quality video output.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
+    },
+    {
+      "id": 6,
+      "title": "Exposure 2010S",
+      "price": 379.99,
+      "manufacturerId": 2,
+      "category": "DVD Players",
+      "imageSrc": "img/dvdafspillere/exposure_2010S.jpg",
+      "description": "Exposure 2010S DVD player provides excellent video and audio quality.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
+    },
+    {
+      "id": 7,
+      "title": "Parasound D200",
+      "price": 479.99,
+      "manufacturerId": 3,
+      "category": "DVD Players",
+      "imageSrc": "img/dvdafspillere/parasound_d200.jpg",
+      "description": "Parasound D200 DVD player offers superior video playback and advanced features.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
+    },
+    {
+      "id": 8,
+      "title": "Parasound Halo D3",
+      "price": 569.99,
+      "manufacturerId": 3,
+      "category": "DVD Players",
+      "imageSrc": "img/dvdafspillere/parasound_halod3.jpg",
+      "description": "Parasound Halo D3 DVD player delivers high-definition video and exceptional audio.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      },
+      "discountedPrice": 427.49
+    },
+    {
+      "id": 9,
+      "title": "Manley Mahi",
+      "price": 759.99,
+      "manufacturerId": 4,
+      "category": "Power Amplifiers",
       "imageSrc": "img/effektforstaerkere/manley_mahi.jpg",
-      "description": "Manley Mahi power amplifier provides powerful and clear sound for your audio system."
+      "description": "Manley Mahi power amplifier provides powerful and clear sound for your audio system.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 10,
-      "name": "Manley Neo-Classic 300B",
-      "price": 899.99,
-      "brand": "Manley",
-      "category": "Effektforstærkere",
+      "title": "Manley Neo-Classic 300B",
+      "price": 849.99,
+      "manufacturerId": 4,
+      "category": "Power Amplifiers",
       "imageSrc": "img/effektforstaerkere/manley_neoclassic300b.jpg",
-      "description": "Manley Neo-Classic 300B power amplifier offers vintage design with modern performance."
+      "description": "Manley Neo-Classic 300B power amplifier offers vintage design with modern performance.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 11,
-      "name": "Manley Snapper",
-      "price": 999.99,
-      "brand": "Manley",
-      "category": "Effektforstærkere",
+      "title": "Manley Snapper",
+      "price": 949.99,
+      "manufacturerId": 4,
+      "category": "Power Amplifiers",
       "imageSrc": "img/effektforstaerkere/manley_snapper.jpg",
-      "description": "Manley Snapper power amplifier delivers high-fidelity sound with robust build quality."
+      "description": "Manley Snapper power amplifier delivers high-fidelity sound with robust build quality.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 12,
-      "name": "Parasound Halo A23",
-      "price": 1099.99,
-      "brand": "Parasound",
-      "category": "Effektforstærkere",
+      "title": "Parasound Halo A23",
+      "price": 1049.99,
+      "manufacturerId": 3,
+      "category": "Power Amplifiers",
       "imageSrc": "img/effektforstaerkere/parasound_haloa23.jpg",
-      "description": "Parasound Halo A23 power amplifier provides exceptional audio performance and reliability."
+      "description": "Parasound Halo A23 power amplifier provides exceptional audio performance and reliability.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      },
+      "discountedPrice": 787.49
     },
     {
       "id": 13,
-      "name": "Creek OBH-22 Passive Preamp",
-      "price": 199.99,
-      "brand": "Creek",
-      "category": "Forforstærkere",
+      "title": "Creek OBH-22 Passive Preamp",
+      "price": 189.99,
+      "manufacturerId": 1,
+      "category": "Preamplifiers",
       "imageSrc": "img/forforstaerkere/Creek_OBH_22_Passive_Preamp.jpg",
-      "description": "Creek OBH-22 passive preamp offers precise control and high-quality sound."
+      "description": "Creek OBH-22 passive preamp offers precise control and high-quality sound.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 14,
-      "name": "Parasound Classic 7100",
-      "price": 299.99,
-      "brand": "Parasound",
-      "category": "Forforstærkere",
+      "title": "Parasound Classic 7100",
+      "price": 284.99,
+      "manufacturerId": 3,
+      "category": "Preamplifiers",
       "imageSrc": "img/forforstaerkere/parasound_classic7100.jpg",
-      "description": "Parasound Classic 7100 preamp delivers excellent audio performance and versatility."
+      "description": "Parasound Classic 7100 preamp delivers excellent audio performance and versatility.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 15,
-      "name": "Parasound Halo P3",
-      "price": 399.99,
-      "brand": "Parasound",
-      "category": "Forforstærkere",
+      "title": "Parasound Halo P3",
+      "price": 379.99,
+      "manufacturerId": 3,
+      "category": "Preamplifiers",
       "imageSrc": "img/forforstaerkere/parasound_halop3.jpg",
-      "description": "Parasound Halo P3 preamp offers superior sound quality and advanced features."
+      "description": "Parasound Halo P3 preamp offers superior sound quality and advanced features.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      },
+      "discountedPrice": 284.99
     },
     {
       "id": 16,
-      "name": "Project Pre Box",
-      "price": 499.99,
-      "brand": "Project",
-      "category": "Forforstærkere",
+      "title": "Project Pre Box",
+      "price": 469.99,
+      "manufacturerId": 5,
+      "category": "Preamplifiers",
       "imageSrc": "img/forforstaerkere/Project_prebox.jpg",
-      "description": "Project Pre Box preamp provides high-fidelity sound and compact design."
+      "description": "Project Pre Box preamp provides high-fidelity sound and compact design.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 17,
-      "name": "Bösendorfer VCS Wall",
-      "price": 599.99,
-      "brand": "Bösendorfer",
-      "category": "Højtalere",
+      "title": "Bösendorfer VCS Wall",
+      "price": 569.99,
+      "manufacturerId": 6,
+      "category": "Speakers",
       "imageSrc": "img/hojtalere/boesendorfer_vcs_wall.gif",
-      "description": "Bösendorfer VCS Wall speakers offer exceptional sound quality and elegant design."
+      "description": "Bösendorfer VCS Wall speakers offer exceptional sound quality and elegant design.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 18,
-      "name": "Epos M5",
-      "price": 699.99,
-      "brand": "Epos",
-      "category": "Højtalere",
+      "title": "Epos M5",
+      "price": 659.99,
+      "manufacturerId": 7,
+      "category": "Speakers",
       "imageSrc": "img/hojtalere/epos_m5.gif",
-      "description": "Epos M5 speakers deliver clear and detailed sound with a modern aesthetic."
+      "description": "Epos M5 speakers deliver clear and detailed sound with a modern aesthetic.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 19,
-      "name": "Harbeth HL7ES2",
-      "price": 799.99,
-      "brand": "Harbeth",
-      "category": "Højtalere",
+      "title": "Harbeth HL7ES2",
+      "price": 759.99,
+      "manufacturerId": 8,
+      "category": "Speakers",
       "imageSrc": "img/hojtalere/harbeth_hl7es2.jpg",
-      "description": "Harbeth HL7ES2 speakers provide natural sound and exceptional build quality."
+      "description": "Harbeth HL7ES2 speakers provide natural sound and exceptional build quality.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 20,
-      "name": "Harbeth Monitor 30",
-      "price": 899.99,
-      "brand": "Harbeth",
-      "category": "Højtalere",
+      "title": "Harbeth Monitor 30",
+      "price": 849.99,
+      "manufacturerId": 8,
+      "category": "Speakers",
       "imageSrc": "img/hojtalere/harbeth_monitor30.jpg",
-      "description": "Harbeth Monitor 30 speakers offer studio-quality sound and precision engineering."
+      "description": "Harbeth Monitor 30 speakers offer studio-quality sound and precision engineering.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 21,
-      "name": "Harbeth P3ES2",
-      "price": 999.99,
-      "brand": "Harbeth",
-      "category": "Højtalere",
+      "title": "Harbeth P3ES2",
+      "price": 949.99,
+      "manufacturerId": 8,
+      "category": "Speakers",
       "imageSrc": "img/hojtalere/harbeth_p3es2.jpg",
-      "description": "Harbeth P3ES2 speakers deliver high-fidelity sound in a compact form factor."
+      "description": "Harbeth P3ES2 speakers deliver high-fidelity sound in a compact form factor.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      },
+      "discountedPrice": 712.49
     },
     {
       "id": 22,
-      "name": "Creek A50I",
-      "price": 1099.99,
-      "brand": "Creek",
-      "category": "Int. Forstærkere",
+      "title": "Creek A50I",
+      "price": 1049.99,
+      "manufacturerId": 1,
+      "category": "Integrated Amplifiers",
       "imageSrc": "img/int_forstaerkere/creek_a50I.jpg",
-      "description": "Creek A50I integrated amplifier offers powerful performance and high-quality sound."
+      "description": "Creek A50I integrated amplifier offers powerful performance and high-quality sound.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 23,
-      "name": "Creek Classic 5350SE",
-      "price": 1199.99,
-      "brand": "Creek",
-      "category": "Int. Forstærkere",
+      "title": "Creek Classic 5350SE",
+      "price": 1149.99,
+      "manufacturerId": 1,
+      "category": "Integrated Amplifiers",
       "imageSrc": "img/int_forstaerkere/creek_classic5350SE.jpg",
-      "description": "Creek Classic 5350SE integrated amplifier delivers exceptional audio performance."
+      "description": "Creek Classic 5350SE integrated amplifier delivers exceptional audio performance.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 24,
-      "name": "Creek Destiny Amp",
-      "price": 1299.99,
-      "brand": "Creek",
-      "category": "Int. Forstærkere",
+      "title": "Creek Destiny Amp",
+      "price": 1249.99,
+      "manufacturerId": 1,
+      "category": "Integrated Amplifiers",
       "imageSrc": "img/int_forstaerkere/creek_destinyamp.jpg",
-      "description": "Creek Destiny integrated amplifier offers high-fidelity sound and elegant design."
+      "description": "Creek Destiny integrated amplifier offers high-fidelity sound and elegant design.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 25,
-      "name": "Manley Snapper",
-      "price": 1399.99,
-      "brand": "Manley",
-      "category": "Int. Forstærkere",
+      "title": "Manley Snapper",
+      "price": 1349.99,
+      "manufacturerId": 4,
+      "category": "Integrated Amplifiers",
       "imageSrc": "img/int_forstaerkere/manley_snapper.jpg",
-      "description": "Manley Snapper integrated amplifier provides powerful sound and robust build quality."
+      "description": "Manley Snapper integrated amplifier provides powerful sound and robust build quality.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 26,
-      "name": "Manley Stingray",
-      "price": 1499.99,
-      "brand": "Manley",
-      "category": "Int. Forstærkere",
+      "title": "Manley Stingray",
+      "price": 1449.99,
+      "manufacturerId": 4,
+      "category": "Integrated Amplifiers",
       "imageSrc": "img/int_forstaerkere/Manley_Stingray.jpg",
-      "description": "Manley Stingray integrated amplifier offers vintage design with modern performance."
+      "description": "Manley Stingray integrated amplifier offers vintage design with modern performance.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
-
     {
       "id": 27,
-      "name": "Pro-Ject Debut III",
-      "price": 1599.99,
-      "brand": "Pro-Ject",
-      "category": "Pladespillere",
+      "title": "Pro-Ject Debut III",
+      "price": 1549.99,
+      "manufacturerId": 5,
+      "category": "Turntables",
       "imageSrc": "img/pladespillere/Pro_ject_Debut_3_bl.jpg",
+      "description": "Pro-Ject Debut III turntable offers high-quality vinyl playback and multiple color options.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      },
       "colors": [
         {
           "color": "Blue",
@@ -259,66 +492,116 @@
     },
     {
       "id": 28,
-      "name": "Pro-Ject RPM 5",
-      "price": 1899.99,
-      "brand": "Pro-Ject",
-      "category": "Pladespillere",
+      "title": "Pro-Ject RPM 5",
+      "price": 1849.99,
+      "manufacturerId": 5,
+      "category": "Turntables",
       "imageSrc": "img/pladespillere/Pro_ject_rpm_5.jpg",
-      "description": "Pro-Ject RPM 5 turntable offers advanced features and exceptional vinyl playback."
+      "description": "Pro-Ject RPM 5 turntable offers advanced features and exceptional vinyl playback.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 29,
-      "name": "Pro-Ject RPM 10",
-      "price": 1999.99,
-      "brand": "Pro-Ject",
-      "category": "Pladespillere",
+      "title": "Pro-Ject RPM 10",
+      "price": 1949.99,
+      "manufacturerId": 5,
+      "category": "Turntables",
       "imageSrc": "img/pladespillere/Pro_ject_rpm10.jpg",
-      "description": "Pro-Ject RPM 10 turntable delivers high-end performance and stunning design."
+      "description": "Pro-Ject RPM 10 turntable delivers high-end performance and stunning design.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      },
+      "discountedPrice": 1462.49
     },
     {
       "id": 30,
-      "name": "Jolida JD102B",
-      "price": 2099.99,
-      "brand": "Jolida",
-      "category": "Rørforstærkere",
+      "title": "Jolida JD102B",
+      "price": 2049.99,
+      "manufacturerId": 9,
+      "category": "Tube Amplifiers",
       "imageSrc": "img/roer_forstaerkere/jolida_JD102b.jpg",
-      "description": "Jolida JD102B tube amplifier offers warm and rich sound with classic design."
+      "description": "Jolida JD102B tube amplifier offers warm and rich sound with classic design.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 31,
-      "name": "Jolida JD202A",
-      "price": 2199.99,
-      "brand": "Jolida",
-      "category": "Rørforstærkere",
+      "title": "Jolida JD202A",
+      "price": 2149.99,
+      "manufacturerId": 9,
+      "category": "Tube Amplifiers",
       "imageSrc": "img/roer_forstaerkere/jolida_JD202a.jpg",
-      "description": "Jolida JD202A tube amplifier provides high-fidelity sound and robust build quality."
+      "description": "Jolida JD202A tube amplifier provides high-fidelity sound and robust build quality.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 32,
-      "name": "Jolida JD300B",
-      "price": 2299.99,
-      "brand": "Jolida",
-      "category": "Rørforstærkere",
+      "title": "Jolida JD300B",
+      "price": 2249.99,
+      "manufacturerId": 9,
+      "category": "Tube Amplifiers",
       "imageSrc": "img/roer_forstaerkere/jolida_JD300b.jpg",
-      "description": "Jolida JD300B tube amplifier offers exceptional audio performance and vintage design."
+      "description": "Jolida JD300B tube amplifier offers exceptional audio performance and vintage design.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 33,
-      "name": "Jolida JD302B",
-      "price": 2399.99,
-      "brand": "Jolida",
-      "category": "Rørforstærkere",
+      "title": "Jolida JD302B",
+      "price": 2349.99,
+      "manufacturerId": 9,
+      "category": "Tube Amplifiers",
       "imageSrc": "img/roer_forstaerkere/jolida_JD302b.jpg",
-      "description": "Jolida JD302B tube amplifier delivers high-quality sound with classic aesthetics."
+      "description": "Jolida JD302B tube amplifier delivers high-quality sound with classic aesthetics.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     },
     {
       "id": 34,
-      "name": "Jolida JD502B",
-      "price": 2499.99,
-      "brand": "Jolida",
-      "category": "Rørforstærkere",
+      "title": "Jolida JD502B",
+      "price": 2449.99,
+      "manufacturerId": 9,
+      "category": "Tube Amplifiers",
       "imageSrc": "img/roer_forstaerkere/jolida_JD502b.jpg",
-      "description": "Jolida JD502B tube amplifier provides powerful sound and elegant design."
+      "description": "Jolida JD502B tube amplifier provides powerful sound and elegant design.",
+      "specifications": {
+        "manufacturerLink": "https://google.com",
+        "warranty-years": "4",
+        "delivery-fee": "Free",
+        "delivery-time": "1 - 5 working days",
+        "card-surcharges": "No"
+      }
     }
   ]
 }
