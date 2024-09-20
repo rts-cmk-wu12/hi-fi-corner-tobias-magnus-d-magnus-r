@@ -52,7 +52,7 @@
                 <a class="header__link" href="mailto:email@example.com">
                     <img class="header__image" src="img/icons/mail.svg" alt="Mail">
                 </a>
-                
+
             </div>
         </div>
 
@@ -89,26 +89,54 @@
         </nav>
     </header>
 
+    <main class="wrapper">
+        <nav class="products-pathway" id="products-pathway">
+            <span class="products-pathway__root">Home</span>
+        </nav>
 
+        <div class="products-wrapper">
+            <aside class="products-filter">
+                <ul class="products-filter__categories" id="products-filter__categories">
+                    <!-- dynamic content -->
+                </ul>
 
+                <section class="products-filter__shop-by">
+                    <h2 class="products-filter__title">Shop by</h2>
+                    <p class="products-filter__filter">Filter</p>
+                    <p class="products-filter__price">Price</p>
+                    <ul class="products-filter__price-list" id="price-list">
+                        <!-- dynamic content -->
+                    </ul>
+                    <p class="products-filter__manufacturer">Manufacturer</p>
+                    <ul class="products-filter__manufacturer-list" id="manufacturer-list">
+                        <!-- dynamic content -->
+                    </ul>
+                </section>
+            </aside>
+        </div>
 
-
-    <nav class="products-pathway" id="products-pathway">
-        <span class="products-pathway__root">Home</span>
-    </nav>
-    <div class="products-wrapper">
-        <aside>
-            <ul class="products-filter__categories" id="products-filter__categories">
-
+        <section class="products">
+            <h1 class="products__title">dynamic title</h1>
+            
+            <div class="products__sorting">
+                <div class="products__sorting-container">
+                    <label for="sorting" class="products__sorting-text">Sort by:</label>
+                    <select name="sorting" id="sorting" class="products__sorting-select">
+                        <option value="price-asc">Price</option>
+                        <option value="name-desc">Name</option>
+                    </select>
+                    <i id="ascend-descend-arrow" class="fa-solid fa-arrow-up"></i>
+                </div>
+            </div>
+            
+            <ul class="products__list" id="products-list">
+                <!-- dynamic content -->
             </ul>
+        </section>
 
-            <section>
-                <h2>shop by</h2>
-                <h3>Filter</h3>
-                <h3>price</h3>
-            </section>
-        </aside>
-    </div>
+
+
+    </main>
 </body>
 
 </html>
