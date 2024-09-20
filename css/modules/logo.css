@@ -4,6 +4,11 @@
     margin-block: 6rem;
 }
 
+.logo--small{
+    margin: 0;
+    width: 70%;
+}
+
 .logo__image{
     width: 100%;
 }
@@ -14,3 +19,6 @@
     font-family: var(--font-normal);
 }
 
+.logo__text--small{
+    font-size: 0.275rem;
+}
