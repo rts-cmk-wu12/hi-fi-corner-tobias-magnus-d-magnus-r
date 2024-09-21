@@ -1,5 +1,5 @@
 {
-  "manufacturer": [
+  "manufacturers": [
     {
       "id": 1,
       "name": "creek"
@@ -43,6 +43,7 @@
       "title": "Creek Classic CD",
       "manufacturerId": 1,
       "price": 279.99,
+      "discountedPrice": 209.99,
       "category": "CD Players",
       "imageSrc": "img/cd_afspillere/creek_classic_cd.jpg",
       "description": "A high-quality CD player from Creek with classic design and superior sound quality.",
@@ -52,14 +53,14 @@
         "delivery-fee": "Free",
         "delivery-time": "1 - 5 working days",
         "card-surcharges": "No"
-      },
-      "discountedPrice": 209.99
+      }
     },
     {
       "id": 2,
       "title": "Creek Destiny CD",
       "manufacturerId": 1,
       "price": 379.99,
+      "discountedPrice": 284.99,
       "category": "CD Players",
       "imageSrc": "img/cd_afspillere/creek_Destiny_CD.jpg",
       "description": "The Destiny CD player from Creek offers exceptional audio performance and sleek design.",
@@ -69,8 +70,7 @@
         "delivery-fee": "Free",
         "delivery-time": "1 - 5 working days",
         "card-surcharges": "No"
-      },
-      "discountedPrice": 284.99
+      }
     },
     {
       "id": 3,
@@ -156,6 +156,7 @@
       "id": 8,
       "title": "Parasound Halo D3",
       "price": 569.99,
+      "discountedPrice": 427.49,
       "manufacturerId": 3,
       "category": "DVD Players",
       "imageSrc": "img/dvdafspillere/parasound_halod3.jpg",
@@ -166,8 +167,7 @@
         "delivery-fee": "Free",
         "delivery-time": "1 - 5 working days",
         "card-surcharges": "No"
-      },
-      "discountedPrice": 427.49
+      }
     },
     {
       "id": 9,
@@ -221,6 +221,7 @@
       "id": 12,
       "title": "Parasound Halo A23",
       "price": 1049.99,
+      "discountedPrice": 787.49,
       "manufacturerId": 3,
       "category": "Power Amplifiers",
       "imageSrc": "img/effektforstaerkere/parasound_haloa23.jpg",
@@ -231,8 +232,7 @@
         "delivery-fee": "Free",
         "delivery-time": "1 - 5 working days",
         "card-surcharges": "No"
-      },
-      "discountedPrice": 787.49
+      }
     },
     {
       "id": 13,
@@ -270,6 +270,7 @@
       "id": 15,
       "title": "Parasound Halo P3",
       "price": 379.99,
+      "discountedPrice": 284.99,
       "manufacturerId": 3,
       "category": "Preamplifiers",
       "imageSrc": "img/forforstaerkere/parasound_halop3.jpg",
@@ -280,8 +281,7 @@
         "delivery-fee": "Free",
         "delivery-time": "1 - 5 working days",
         "card-surcharges": "No"
-      },
-      "discountedPrice": 284.99
+      }
     },
     {
       "id": 16,
@@ -367,6 +367,7 @@
       "id": 21,
       "title": "Harbeth P3ES2",
       "price": 949.99,
+      "discountedPrice": 712.49,
       "manufacturerId": 8,
       "category": "Speakers",
       "imageSrc": "img/hojtalere/harbeth_p3es2.jpg",
@@ -377,8 +378,7 @@
         "delivery-fee": "Free",
         "delivery-time": "1 - 5 working days",
         "card-surcharges": "No"
-      },
-      "discountedPrice": 712.49
+      }
     },
     {
       "id": 22,
@@ -510,6 +510,7 @@
       "id": 29,
       "title": "Pro-Ject RPM 10",
       "price": 1949.99,
+      "discountedPrice": 1462.49,
       "manufacturerId": 5,
       "category": "Turntables",
       "imageSrc": "img/pladespillere/Pro_ject_rpm10.jpg",
@@ -520,8 +521,7 @@
         "delivery-fee": "Free",
         "delivery-time": "1 - 5 working days",
         "card-surcharges": "No"
-      },
-      "discountedPrice": 1462.49
+      }
     },
     {
       "id": 30,

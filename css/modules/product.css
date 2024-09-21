@@ -1,0 +1,85 @@
+/* Variables */
+:root {
+    --product-margin-top: 1rem;
+    --product-text-transform: uppercase;
+    --product-text-align: center;
+    --product-display: flex;
+    --product-flex-direction: column;
+    --product-align-items: center;
+    --product-image-width: 13rem;
+    --product-image-height: 13rem;
+    --product-image-border: 1px solid var(--gray);
+    --product-name-cursor: pointer;
+    --product-name-text-decoration: none;
+    --product-name-color: var(--black);
+    --product-price-color: var(--light-brown);
+    --product-button-bg-color: var(--light-brown);
+    --product-button-border: none;
+    --product-button-color: var(--white);
+    --product-button-padding: 0.5rem;
+    --product-flex-margin-top: 20px;
+    --product-grid-gap: 1rem;
+    --product-grid-row-gap: 4rem;
+    --product-grid-margin-top: 1rem;
+}
+
+/* Display models for products container */
+.products__main-container.flex {
+    display: var(--product-display);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: var(--product-flex-margin-top);
+}
+
+.products__main-container.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--product-grid-gap);
+    row-gap: var(--product-grid-row-gap);
+    margin-top: var(--product-grid-margin-top);
+}
+
+.products__main-container.flex .product {
+    grid-column: span 4;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--product-grid-gap);
+    text-align: left;
+}
+
+/* Product */
+.product {
+    text-align: var(--product-text-align);
+    display: var(--product-display);
+    flex-direction: var(--product-flex-direction);
+    align-items: var(--product-align-items);
+}
+
+.product__image {
+    width: var(--product-image-width);
+    height: var(--product-image-height);
+    object-fit: contain;
+    border: var(--product-image-border);
+}
+
+.product__name {
+    margin-top: var(--product-margin-top);
+    text-transform: var(--product-text-transform);
+    cursor: var(--product-name-cursor);
+    text-decoration: var(--product-name-text-decoration);
+    color: var(--product-name-color);
+}
+
+.product__price {
+    margin-top: var(--product-margin-top);
+    color: var(--product-price-color);
+}
+
+.product__button {
+    margin-top: var(--product-margin-top);
+    background-color: var(--product-button-bg-color);
+    border: var(--product-button-border);
+    color: var(--product-button-color);
+    padding: var(--product-button-padding);
+    text-transform: var(--product-text-transform);
+}

@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hifi - Shop</title>
+    <!-- Stylesheet + Fontawesome cdn -->
     <link rel="stylesheet" href="css/shop.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Script -->
+    <script type="module" src="js/fetch-products.js"></script>
 </head>
 
 <body>
@@ -94,52 +97,71 @@
             <span class="products-pathway__root">Home</span>
         </nav>
 
-        <div class="products-wrapper"> <!-- Filter and Products -->
-            <aside class="products-filter">
-                <ul class="products-filter__categories" id="products-filter__categories">
-                    <!-- dynamic content -->
-                </ul>
 
-                <section class="products-filter__shop-by">
-                    <h2 class="products-filter__title">Shop by</h2>
-                    <p class="products-filter__filter">Filter</p>
-                    <p class="products-filter__price">Price</p>
-                    <ul class="products-filter__price-list" id="price-list">
-                        <!-- dynamic content -->
-                    </ul>
-                    <p class="products-filter__manufacturer">Manufacturer</p>
-                    <ul class="products-filter__manufacturer-list" id="manufacturer-list">
-                        <!-- dynamic content -->
-                    </ul>
-                </section>
-            </aside>
-        </div>
-
-        <section class="products"> <!-- Products -->
-            <h1 class="products__title">dynamic title</h1>
-            
-            <div class="products__sorting">
-                <div class="products__sorting-container">
-                    <label for="sorting" class="products__sorting-text">Sort by:</label>
-                    <select name="sorting" id="sorting" class="products__sorting-select">
-                        <option value="price-asc">Price</option>
-                        <option value="name-desc">Name</option>
-                    </select>
-                    <i id="ascend-descend-arrow" class="fa-solid fa-arrow-up"></i>
-                </div>
-            </div>
-            
-            <ul class="products__list" id="products-list">
+        <aside class="products-filter">
+            <ul class="products-filter__categories" id="products-filter__categories">
                 <!-- dynamic content -->
             </ul>
+
+            <section class="products-filter__shop-by">
+                <h2 class="products-filter__title">Shop by</h2>
+                <p class="products-filter__filter">Filter</p>
+                <p class="products-filter__price">Price</p>
+                <ul class="products-filter__price-list" id="products-filter__price-list">
+                    <!-- dynamic content -->
+                </ul>
+                <p class="products-filter__manufacturer">Manufacturer</p>
+                <ul class="products-filter__manufacturer-list" id="products-filter__manufacturer-list">
+                    <!-- dynamic content -->
+                </ul>
+            </section>
+        </aside>
+
+
+        <section class="products"> <!-- Products -->
+            <h1 class="products__title">all</h1>
+            <div class="products__sorting">
+                <div class="products__sorting-left">
+                    <label for="products__sorting-select" class="products__sorting-text">Sort by:</label>
+                    <select name="sorting" id="products__sorting-select" class="products__sorting-select">
+                        <option value="price-sort">Price</option>
+                        <option value="name-sort">Name</option>
+                    </select>
+                    <i class="products__filter-arrow fa-solid fa-arrow-up"></i>
+
+                    <!-- Product display options -->
+                    <div class="products__display-options" id="products__display-options">
+                        <p class="products__display-text">view as:</p>
+                        <img src="img/icons/gridbox-icon.svg" alt="gridbox-icon" class="products__display-icon"
+                            id="products__display-grid">
+                        <img src="img/icons/flexbox-icon.svg" alt="flexbox-icon" class="products__display-icon"
+                            id="products__display-flex">
+                    </div>
+                </div>
+
+                <div class="products__sorting-right">
+                    <p class="products__items-text" id="products__items-text">items</p>
+                    <p class="products__text">show:</p>
+                    <select name="limiter" id="products__limiter">
+                        <option>all</option>
+                        <option>24</option>
+                        <option>16</option>
+                        <option>8</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products__main-container grid" id="products__main-container">
+                <!-- dynamic content -->
+            </div>
         </section>
 
-        <aside class="products-manufacturer" id="products-manufacturer">
+        <aside class="products-manufacturer">
             <h3 class="products-manufacturer__under-heading">manufacturer</h3>
             <ul class="products-manufacturer__list" id="products-manufacturer__list">
-            <!-- Dynamic content -->
+                <!-- Dynamic content -->
             </ul>
-            <button class="products-manufacturer__button" id="products-manufacturer__button">view all</button>
+            <button class="products-manufacturer__button">view all</button>
         </aside>
 
     </main>
