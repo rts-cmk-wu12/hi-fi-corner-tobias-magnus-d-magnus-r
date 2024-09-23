@@ -1,24 +1,24 @@
-.logo{
+.logo {
     max-width: fit-content;
     margin: auto;
     margin-block: 6rem;
 }
 
-.logo--small{
+.logo--header {
     margin: 0;
-    width: 70%;
+    padding: 1.5rem 0 0.5rem 1rem;
 }
 
-.logo__image{
+.logo__image {
     width: 100%;
 }
 
-.logo__text{
+.logo__text {
     text-transform: uppercase;
     color: var(--white);
     font-family: var(--font-normal);
 }
 
-.logo__text--small{
-    font-size: 0.275rem;
+.logo__text--header {
+    font-size: 0.4rem;
 }
