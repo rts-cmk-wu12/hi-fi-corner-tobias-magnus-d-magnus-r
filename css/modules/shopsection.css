@@ -43,7 +43,7 @@
 /* product */ 
 .item {
  display: grid;
- grid-template-columns: 45% 55%;
+ grid-template-columns: repeat(2, 1fr);
  column-gap: 10px;
  padding: 0 20px 0 20px;
  height: 100%;
