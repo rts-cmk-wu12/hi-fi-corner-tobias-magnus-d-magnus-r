@@ -1,0 +1,20 @@
+.products-pathway {
+    display: flex;
+    column-gap: 0.25rem;
+    font-family: var(--font-normal);
+}
+
+.products-pathway__link {
+    font-style: italic;
+    cursor: pointer;
+    color: var(--light-brown);
+    text-decoration: none;
+}
+
+.products-pathway__link--active{
+    color: var(--black);
+}
+
+.seperator {
+    font-style: italic;
+}
