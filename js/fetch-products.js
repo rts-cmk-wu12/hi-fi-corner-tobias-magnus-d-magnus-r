@@ -23,11 +23,20 @@ const itemsTextElement = document.querySelector('#products__items-text');
 /* function for changing display the Products container display option */
 displayOptionsContainerElement.addEventListener('click', (event) => {
     console.log(event.target);
+
+    if (event.target.id === 'products__display-flex'||'products__display-grid') {
+        document.querySelectorAll('.products__display-icon').forEach((icon) => {
+            icon.classList.remove('products__display-icon--active');
+        });
+    }
+
     if (event.target.id === 'products__display-flex') {
         productsContainerElement.classList.replace('grid', 'flex');
+        event.target.classList.add('products__display-icon--active');
         console.log('Display products as flex');
     } else if (event.target.id === 'products__display-grid') {
         productsContainerElement.classList.replace('flex', 'grid');
+        event.target.classList.add('products__display-icon--active');
         console.log('Display products as grid');
     }
 });
@@ -35,25 +44,26 @@ displayOptionsContainerElement.addEventListener('click', (event) => {
 itemsTextElement.innerHTML = `${productData.length} Item(s)`;
 
 /* Creating the product */
-// productData.forEach((product) => {
-//     const productElement = document.createElement('div');
-//     productElement.classList.add('product');
+productData.forEach((product) => {
+    const productElement = document.createElement('div');
+    productElement.classList.add('product');
 
-//     const productImageElement = document.createElement('img');
-//     productImageElement.src = product.imageSrc;
-//     productImageElement.alt = product.category;
+    const productImageElement = document.createElement('img');
+    productImageElement.classList.add('product__image');
+    productImageElement.src = product.imageSrc;
+    productImageElement.alt = product.category;
 
-//     const productInformationElement = document.createElement('div');
-//     productInformationElement.innerHTML = `
-//     <a href="details.html?product=${product.title}" class="product__name">${product.title}</a>
-//     <p class="product__price">£${product.price}</p>
-//     <button class="product__button">add to cart</button>
-//     `;
+    const productInformationElement = document.createElement('div');
+    productInformationElement.innerHTML = `
+    <a href="details.html?product=${product.title}" class="product__name">${product.title}</a>
+    <p class="product__price">£${product.price}</p>
+    <button class="product__button">add to cart</button>
+    `;
 
-//     productElement.appendChild(productImageElement);
-//     productElement.appendChild(productInformationElement);
-//     productsContainerElement.appendChild(productElement);
-// });
+    productElement.appendChild(productImageElement);
+    productElement.appendChild(productInformationElement);
+    productsContainerElement.appendChild(productElement);
+});
 
 // Fetches manufacturer data from an API, processes product data to extract unique categories and manufacturers,
 // and logs the unique categories and manufacturers to the console.
@@ -75,10 +85,12 @@ async function getUniqueData() {
             const manufacturerName = manufacturerMap[product.manufacturerId];
             if (!accumulator.manufacturers.includes(manufacturerName)) {
                 accumulator.manufacturers.push(manufacturerName);
+                accumulator.manufacturerCounts[manufacturerName] = 0;
             }
+            accumulator.manufacturerCounts[manufacturerName]++;
             return accumulator;
         },
-        { categories: [], manufacturers: [] }
+        { categories: [], manufacturers: [], manufacturerCounts: {} }
     );
 
     return uniqueValues;
@@ -87,22 +99,38 @@ async function getUniqueData() {
 getUniqueData().then((uniqueValues) => {
     console.log('Unique categories: ', uniqueValues.categories);
     console.log('Unique manufacturers: ', uniqueValues.manufacturers);
+    console.log('Manufacturer counts: ', uniqueValues.manufacturerCounts);
 
+    // left category list
     uniqueValues.categories.forEach((category) => {
         const categoryElement = document.createElement('li');
         categoryElement.textContent = category;
+        categoryElement.classList.add('products-filter__item');
         categoryFilterContainerElement.appendChild(categoryElement);
     });
 
+    // left manufacture list
     uniqueValues.manufacturers.forEach((manufacturer) => {
         const manufacturerElement = document.createElement('li');
-        manufacturerElement.textContent = manufacturer;
+        const count = uniqueValues.manufacturerCounts[manufacturer];
+        manufacturerElement.textContent = manufacturer + ` (${count})`;
+        manufacturerElement.classList.add('products-filter__item');
         manufacturerFilterContainerElement.appendChild(manufacturerElement);
     });
 
+    // uniqueValues.manufacturers.forEach((manufacturer) => {
+    //     const manufacturerElement = document.createElement('li');
+    //     const count = uniqueValues.manufacturerCounts[manufacturer];
+    //     manufacturerElement.textContent = `${manufacturer} (${count})`;
+    //     manufacturerElement.classList.add('products-filter__item');
+    //     manufacturerFilterContainerElement.appendChild(manufacturerElement);
+    // });
+
+    // right manufacture list
     uniqueValues.manufacturers.forEach((manufacturer) => {
         const manufacturerElement = document.createElement('li');
         manufacturerElement.textContent = manufacturer;
+        manufacturerElement.classList.add('products-manufacturer__item');
         manufacturerContainerElement.appendChild(manufacturerElement);
     });
 });

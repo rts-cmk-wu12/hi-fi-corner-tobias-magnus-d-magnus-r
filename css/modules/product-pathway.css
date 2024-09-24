@@ -5,7 +5,6 @@
 }
 
 .products-pathway__link {
-    font-style: italic;
     cursor: pointer;
     color: var(--light-brown);
     text-decoration: none;

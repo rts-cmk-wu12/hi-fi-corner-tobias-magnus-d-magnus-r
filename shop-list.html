@@ -12,7 +12,7 @@
     <script type="module" src="js/fetch-products.js"></script>
 </head>
 
-<body>
+<body class="dark-body">
     <header class="header"> <!-- InformationBar-->
         <div class="header__information header__information--alternative">
             <div class="logo logo--header">
@@ -95,23 +95,9 @@
     <main class="wrapper"> <!-- Shop Content -->
         <nav class="products-pathway">
             <span class="products-pathway__link">Home</span>
-            <span class="products-pathway__link">amplifier</span>
+            <span class="seperator"> / </span>
+            <span class="products-pathway__link products-pathway__link--active">Amplifier</span>
         </nav>
-
-    <!-- <div class="item-wrapper">
-        <div class="path-container">
-            <ul class="path__list">
-                <li class="path__item">
-                    <a class="path__link path__link--active" href="?nosite" target="_blank">Home</a>
-                </li>
-                <li class="path__item">
-                    <a class="path__link path__link--active" href="?nosite" target="_blank">Amplifiers</a>
-                </li>
-                <li class="path__item">
-                    <a class="path__link path__product" href="?nosite" target="_blank">Product Name</a>
-                </li>
-            </ul>
-        </div> -->
 
         <aside class="products-filter">
             <ul class="products-filter__categories" id="products-filter__categories">
@@ -137,32 +123,37 @@
             <h1 class="products__title">all</h1>
             <div class="products__sorting">
                 <div class="products__sorting-left">
-                    <label for="products__sorting-select" class="products__sorting-text">Sort by:</label>
-                    <select name="sorting" id="products__sorting-select" class="products__sorting-select">
-                        <option value="price-sort">Price</option>
-                        <option value="name-sort">Name</option>
-                    </select>
-                    <i class="products__filter-arrow fa-solid fa-arrow-up"></i>
-
+                    <div>
+                        <label for="products__sorting-select" class="products__sorting-text">Sort by:</label>
+                        <select name="sorting" id="products__sorting-select" class="products__sorting-select">
+                            <option value="price-sort">Price</option>
+                            <option value="name-sort">Name</option>
+                        </select>
+    
+                        <i class="products__filter-arrow fa-solid fa-arrow-up"></i>
+                    </div>
+    
                     <!-- Product display options -->
                     <div class="products__display-options" id="products__display-options">
                         <p class="products__display-text">view as:</p>
-                        <img src="img/icons/gridbox-icon.svg" alt="gridbox-icon" class="products__display-icon"
+                        <img src="img/icons/gridbox-icon.svg" alt="gridbox-icon" class="products__display-icon products__display-icon--active"
                             id="products__display-grid">
                         <img src="img/icons/flexbox-icon.svg" alt="flexbox-icon" class="products__display-icon"
                             id="products__display-flex">
                     </div>
                 </div>
-
+    
                 <div class="products__sorting-right">
                     <p class="products__items-text" id="products__items-text">items</p>
-                    <p class="products__text">show:</p>
-                    <select name="limiter" id="products__limiter">
-                        <option>all</option>
-                        <option>24</option>
-                        <option>16</option>
-                        <option>8</option>
-                    </select>
+                    <div>
+                        <label class="products__limiter-label" for="products__limiter">show:</label>
+                        <select name="limiter" id="products__limiter">
+                            <option>all</option>
+                            <option>24</option>
+                            <option>16</option>
+                            <option>8</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
