@@ -64,7 +64,8 @@
     color: var(--dark-brown);
 }
 
-.products-filter__manufacturer-list{
+.products-filter__manufacturer-list,
+.products-filter__price-list{
     display: flex;
     flex-direction: column;
     gap: 0.75rem;

@@ -1,3 +1,7 @@
 {
-
+    "/products/category/:category": "/products?category=:category",
+    "/products/manufacturerId/:id": "/products?manufacturerId=:id",
+    "/products/name/:manufacturer": "/products?product_title=:title",
+    "/products/home&_sort=:sort&_order=:order&_limit=:limit": "/products?_sort=:sort&_order=:order&_limit=:limit",
+    "/products/price/lowest/:low/highest/:high": "/products?price_gte=:low&price_lte=:high"
 }
