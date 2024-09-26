@@ -17,3 +17,7 @@
     background-position: top;
     background-size: cover;
 }
+
+.dark-body{
+    background-color: var(--black);
+}

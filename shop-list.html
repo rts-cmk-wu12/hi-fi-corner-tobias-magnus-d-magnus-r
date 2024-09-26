@@ -5,17 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hifi - Shop</title>
-    <link rel="stylesheet" href="css/shop.css">
+    <!-- Stylesheet + Fontawesome cdn -->
+    <link rel="stylesheet" href="css/shop-list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Script -->
+    <script type="module" src="js/fetch-products.js"></script>
+    <script type="module" src="js/sort-products.js"></script>
 </head>
 
-<body>
+<body class="dark-body">
     <header class="header"> <!-- InformationBar-->
         <div class="header__information header__information--alternative">
-            <div class="logo">
+            <div class="logo logo--header">
                 <img class="logo__image" src="img/random/hifi-logo.svg" alt="hifi logo">
-                <p class="logo__text">hificorner.co.uk</p>
+                <p class="logo__text logo__text--header">hificorner.co.uk</p>
             </div>
-            <div class="header__information-container">
+
+            <div class="header__information-container ">
+                <div class="header__search">
+                    <form class="header__search-form">
+                        <input class="header__search-input" id="header__search-input" type="text" placeholder="Search entire store here...">
+                        <button class="header__search-submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="header__account">
+                    <a class="header__account-link" href="#">
+                        <i class="fa-solid fa-user fa-sm" style="color: #ffffff;"></i>
+                        <p class="header__account-text">account</p>
+                    </a>
+                </div>
+
+                <div class="header__cart">
+                    <a class="header__cart-link" href="#">
+                        <i class="fa-solid fa-cart-shopping fa-sm" style="color: #ffffff;"></i>
+                        <p class="header__cart-text">cart</p>
+                    </a>
+                </div>
+
                 <a class="header__link" href="https://maps.app.goo.gl/Ev5athXpk7HgQfLQA">
                     <img class="header__image" src="img/icons/location.svg" alt="Location">
                 </a>
@@ -28,10 +57,6 @@
                     <img class="header__image" src="img/icons/mail.svg" alt="Mail">
                 </a>
 
-                <button class="header__subscription">
-                    <img class="header__subscription-image" src="img/icons/subscribe.svg" alt="subscribe">
-                    Subscribe
-                </button>
             </div>
         </div>
 
@@ -50,7 +75,7 @@
                 </li>
 
                 <li class="header__navigation-item">
-                    <a class="header__navigation-link" href="?nosite">blog</a>
+                    <a class="header__navigation-link" href="?nosite">news</a>
                 </li>
 
                 <li class="header__navigation-item">
@@ -68,26 +93,89 @@
         </nav>
     </header>
 
+    <main class="wrapper"> <!-- Shop Content -->
+        <nav class="products-pathway" id="products-pathway">
+            <span class="products-pathway__link">Home</span>
+            <!-- <span class="seperator"> / </span>
+            <span class="products-pathway__link products-pathway__link--active">Amplifier</span> -->
+        </nav>
 
-
-
-
-    <nav class="products-pathway" id="products-pathway">
-        <span class="products-pathway__root">Home</span>
-    </nav>
-    <div class="products-wrapper">
-        <aside>
+        <aside class="products-filter">
             <ul class="products-filter__categories" id="products-filter__categories">
-
+                <!-- category filter -->
             </ul>
 
-            <section>
-                <h2>shop by</h2>
-                <h3>Filter</h3>
-                <h3>price</h3>
+            <section class="products-filter__shop-by">
+                <h2 class="products-filter__title">Shop by</h2>
+                <p class="products-filter__filter">Filter</p>
+                <p class="products-filter__price">Price</p>
+                <ul class="products-filter__price-list" id="products-filter__price-list">
+                    <li class="products-filter__item">£<span>0</span> - £<span>500</span></li>
+                    <li class="products-filter__item">£<span>500</span> - £<span>1000</span></li>
+                    <li class="products-filter__item">£<span>1000</span> - £<span>2000</span></li>
+                </ul>
+                <p class="products-filter__manufacturer">Manufacturer</p>
+                <ul class="products-filter__manufacturer-list" id="products-filter__manufacturer-list">
+                    <!-- manufacturer filter -->
+                </ul>
             </section>
         </aside>
-    </div>
+
+
+        <section class="products"> <!-- Products -->
+            <h1 class="products__title" id="products__title">all</h1>
+            <div class="products__sorting">
+                <div class="products__sorting-left">
+                    <div>
+                        <label for="products__sorting-select" class="products__sorting-text">Sort by:</label>
+                        <select name="sorting" id="products__sorting-select" class="products__sorting-select">
+                            <option>Price: Ascending</option>
+                            <option>Price: Descending</option>
+                            <option>Name: A-Z</option>
+                            <option>Name: Z-A</option>
+                        </select>
+    
+                        <!-- <i class="products__filter-arrow fa-solid fa-arrow-up"></i> -->
+                    </div>
+    
+                    <!-- Product display options -->
+                    <div class="products__display-options" id="products__display-options">
+                        <p class="products__display-text">view as:</p>
+                        <img src="img/icons/gridbox-icon.svg" alt="gridbox-icon" class="products__display-icon products__display-icon--active"
+                            id="products__display-grid">
+                        <img src="img/icons/flexbox-icon.svg" alt="flexbox-icon" class="products__display-icon"
+                            id="products__display-flex">
+                    </div>
+                </div>
+    
+                <div class="products__sorting-right">
+                    <p class="products__items-text" id="products__items-text">items</p>
+                    <div>
+                        <label class="products__limiter-label" for="products__limiter">show:</label>
+                        <select name="limiter" id="products__limiter">
+                            <option>34</option>
+                            <option>24</option>
+                            <option>16</option>
+                            <option>8</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products__main-container grid" id="products__main-container">
+                <!-- dynamic content -->
+            </div>
+        </section>
+
+        <aside class="products-manufacturer">
+            <h3 class="products-manufacturer__under-heading">manufacturer</h3>
+            <ul class="products-manufacturer__list" id="products-manufacturer__list">
+                <!-- Dynamic content -->
+            </ul>
+            <button class="products-manufacturer__button" id="products-manufacturer__button">view all</button>
+        </aside>
+
+    </main>
 </body>
 
 </html>

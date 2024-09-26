@@ -6,13 +6,8 @@ const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
 
-// Handle GET request to '/users/emails' endpoint
-// server.get('/users/emails', (req, response) => {
-//   const db = router.db;
-//   const users = db.get('users').value();
-//   const emails = users.map((user) => user.email);
-//   response.jsonp(emails);
-// });
+// Custom middleware
+
 
 // reading rewrites.json file and parsing it to JSON
 // then using jsonServer.rewriter() to handle rewrites
