@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hifi - Shop</title>
   <link rel="stylesheet" href="css/shop-singlepage.css">
+  <script type="module" src="js/details.js"></script>
 </head>
 
 <body>
@@ -60,7 +61,7 @@
         </li>
 
         <li class="header__navigation-item">
-          <a class="header__navigation-link header__navigation-link--active" href="shop.html">shop</a>
+          <a class="header__navigation-link header__navigation-link--active" href="shop-frontpage.html">shop</a>
         </li>
 
         <li class="header__navigation-item">
@@ -70,7 +71,7 @@
     </nav>
   </header>
   <div class="item-wrapper">
-    <nav class="products-pathway">
+    <nav class="products-pathway" id="products-pathway">
       <span class="products-pathway__link">home</span>
       <span class="seperator"> / </span>
       <span class="products-pathway__link">category</span>
@@ -83,19 +84,19 @@
     <div class="item">
       <div class="item__preview">
         <div class="preview-container">
-          <img src="img/dvdafspillere/creek_classic.jpg" alt="preview">
+          <img id="preview-image" src="img/dvdafspillere/creek_classic.jpg" alt="preview">
         </div>
       </div>
 
       <section class="item__details">
-        <h2 class="item__name item__color--brown">Product Name</h2>
+        <h2 class="item__name item__color--brown" id="item__name">Product Name</h2>
         <div class="pricing">
-          <p class="item__name item__color--brown">see other Marantz Products</p>
-          <div>
+          <p id="see-other-products" class="item__name item__color--brown">see other Marantz Products</p>
+          <div id="item__price">
             <p class="item__name item__price--disabled">£469.00</p>
             <p class="item__price item__price--enabled">£429.00</p>
           </div>
-          <p class="item__name item__color--black-light">
+          <p id="item__description" class="item__name item__color--black-light">
             The PM6006 is an upgraded successor of the multi-award-winning PM6005. Marantz retained the pre-amp and
             power-amp sections that exclusively feature discrete components - not a single IC in sight of the signal
             path The PM6006 is upgraded for peak current at the amplifier stage, which makes it possible to refine the

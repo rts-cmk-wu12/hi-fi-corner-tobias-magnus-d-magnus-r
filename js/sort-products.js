@@ -94,7 +94,7 @@ manufacturerFilterContainerElement.addEventListener('click', async (e) => {
     const manufacturers = await response.json();
 
     const manufacturer = manufacturers.find(m => m.name.toLowerCase() === manufacturerName.toLowerCase());
-
+    console.log(manufacturer);
     if (manufacturer) {
         productFilter = `products/manufacturerId/${manufacturer.id}`;
         console.log(productFilter);
