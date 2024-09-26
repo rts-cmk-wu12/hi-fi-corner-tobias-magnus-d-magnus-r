@@ -3,8 +3,10 @@
 
 
 /* Modules */
+@import url(modules/body.css);
 @import url(modules/header.css);
 @import url(modules/logo.css);
 @import url(modules/shop.css);
+@import url(modules/product-pathway.css);
 @import url(modules/product.css);
 @import url(modules/footer.css);

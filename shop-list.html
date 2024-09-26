@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Script -->
     <script type="module" src="js/fetch-products.js"></script>
+    <script type="module" src="js/sort-products.js"></script>
 </head>
 
-<body>
+<body class="dark-body">
     <header class="header"> <!-- InformationBar-->
         <div class="header__information header__information--alternative">
             <div class="logo logo--header">
@@ -23,7 +24,7 @@
             <div class="header__information-container ">
                 <div class="header__search">
                     <form class="header__search-form">
-                        <input class="header__search-input" type="text" placeholder="Search entire store here...">
+                        <input class="header__search-input" id="header__search-input" type="text" placeholder="Search entire store here...">
                         <button class="header__search-submit">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
@@ -93,25 +94,11 @@
     </header>
 
     <main class="wrapper"> <!-- Shop Content -->
-        <nav class="products-pathway">
+        <nav class="products-pathway" id="products-pathway">
             <span class="products-pathway__link">Home</span>
-            <span class="products-pathway__link">amplifier</span>
+            <!-- <span class="seperator"> / </span>
+            <span class="products-pathway__link products-pathway__link--active">Amplifier</span> -->
         </nav>
-
-    <!-- <div class="item-wrapper">
-        <div class="path-container">
-            <ul class="path__list">
-                <li class="path__item">
-                    <a class="path__link path__link--active" href="?nosite" target="_blank">Home</a>
-                </li>
-                <li class="path__item">
-                    <a class="path__link path__link--active" href="?nosite" target="_blank">Amplifiers</a>
-                </li>
-                <li class="path__item">
-                    <a class="path__link path__product" href="?nosite" target="_blank">Product Name</a>
-                </li>
-            </ul>
-        </div> -->
 
         <aside class="products-filter">
             <ul class="products-filter__categories" id="products-filter__categories">
@@ -123,7 +110,9 @@
                 <p class="products-filter__filter">Filter</p>
                 <p class="products-filter__price">Price</p>
                 <ul class="products-filter__price-list" id="products-filter__price-list">
-                    <!-- price filter -->
+                    <li class="products-filter__item">£<span>0</span> - £<span>500</span></li>
+                    <li class="products-filter__item">£<span>500</span> - £<span>1000</span></li>
+                    <li class="products-filter__item">£<span>1000</span> - £<span>2000</span></li>
                 </ul>
                 <p class="products-filter__manufacturer">Manufacturer</p>
                 <ul class="products-filter__manufacturer-list" id="products-filter__manufacturer-list">
@@ -134,35 +123,42 @@
 
 
         <section class="products"> <!-- Products -->
-            <h1 class="products__title">all</h1>
+            <h1 class="products__title" id="products__title">all</h1>
             <div class="products__sorting">
                 <div class="products__sorting-left">
-                    <label for="products__sorting-select" class="products__sorting-text">Sort by:</label>
-                    <select name="sorting" id="products__sorting-select" class="products__sorting-select">
-                        <option value="price-sort">Price</option>
-                        <option value="name-sort">Name</option>
-                    </select>
-                    <i class="products__filter-arrow fa-solid fa-arrow-up"></i>
-
+                    <div>
+                        <label for="products__sorting-select" class="products__sorting-text">Sort by:</label>
+                        <select name="sorting" id="products__sorting-select" class="products__sorting-select">
+                            <option>Price: Ascending</option>
+                            <option>Price: Descending</option>
+                            <option>Name: A-Z</option>
+                            <option>Name: Z-A</option>
+                        </select>
+    
+                        <!-- <i class="products__filter-arrow fa-solid fa-arrow-up"></i> -->
+                    </div>
+    
                     <!-- Product display options -->
                     <div class="products__display-options" id="products__display-options">
                         <p class="products__display-text">view as:</p>
-                        <img src="img/icons/gridbox-icon.svg" alt="gridbox-icon" class="products__display-icon"
+                        <img src="img/icons/gridbox-icon.svg" alt="gridbox-icon" class="products__display-icon products__display-icon--active"
                             id="products__display-grid">
                         <img src="img/icons/flexbox-icon.svg" alt="flexbox-icon" class="products__display-icon"
                             id="products__display-flex">
                     </div>
                 </div>
-
+    
                 <div class="products__sorting-right">
                     <p class="products__items-text" id="products__items-text">items</p>
-                    <p class="products__text">show:</p>
-                    <select name="limiter" id="products__limiter">
-                        <option>all</option>
-                        <option>24</option>
-                        <option>16</option>
-                        <option>8</option>
-                    </select>
+                    <div>
+                        <label class="products__limiter-label" for="products__limiter">show:</label>
+                        <select name="limiter" id="products__limiter">
+                            <option>34</option>
+                            <option>24</option>
+                            <option>16</option>
+                            <option>8</option>
+                        </select>
+                    </div>
                 </div>
             </div>
 
@@ -176,7 +172,7 @@
             <ul class="products-manufacturer__list" id="products-manufacturer__list">
                 <!-- Dynamic content -->
             </ul>
-            <button class="products-manufacturer__button">view all</button>
+            <button class="products-manufacturer__button" id="products-manufacturer__button">view all</button>
         </aside>
 
     </main>
