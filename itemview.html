@@ -7,6 +7,7 @@
   <title>Hifi - Shop</title>
   <link rel="stylesheet" href="css/shop-singlepage.css">
   <script type="module" src="js/details.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -89,12 +90,14 @@
       </div>
 
       <section class="item__details">
-        <h2 class="item__name item__color--brown" id="item__name">Product Name</h2>
+        <h2 class="item__color--brown" id="item__name">Product Name</h2>
         <div class="pricing">
-          <p id="see-other-products" class="item__name item__color--brown">see other Marantz Products</p>
-          <div id="item__price">
-            <p class="item__name item__price--disabled">£469.00</p>
-            <p class="item__price item__price--enabled">£429.00</p>
+          <div class="pricing-flex">
+            <p id="see-other-products" class="item__color--brown">see other Marantz Products</p>
+            <div id="item__price">
+              <p class=" item__price--disabled">£469.00</p>
+              <p class="item__price item__price--enabled">£429.00</p>
+            </div>
           </div>
           <p id="item__description" class="item__name item__color--black-light">
             The PM6006 is an upgraded successor of the multi-award-winning PM6005. Marantz retained the pre-amp and
@@ -103,66 +106,156 @@
             sound for you in much more detail.
           </p>
           <div class="selection">
-            <button class="item__name item__color--bg-brown">Ask a question</button>
-            <button class="item__name item__color--bg-brown">Part exchange</button>
-            <button class="item__name item__color--bg-brown">Pay by finance</button>
-            <button class="item__name item__color--bg-brown">Seen a better price?</button>
+            <button class="item__button item__color--bg-brown">Ask a question</button>
+            <button class="item__button item__color--bg-brown">Part exchange</button>
+            <button class="item__button item__color--bg-brown">Pay by finance</button>
+            <button class="item__button item__color--bg-brown">Seen a better price?</button>
           </div>
           <form class="form">
-              <label class="item__color--brown option__finish">Finish<span class="options__required"> *</span></label>
-              <label class="item__color--red"><span class="options__required">* </span>Required Fields</label>
-              <label class="option__button" for="black"><input name="optionResult" id="black" type="radio" required>Black</label>
-              <label class="option__button" for="silver"><input name="optionResult" id="silver" type="radio" required>Silver</label>
-              <div class="paymentcontent">
-                <label class="paymentcontent__color--brown">Qty</label>
-                <input class="paymentcontent__input" type="number">
-                <button class="paymentcontent__button item__color--bg-brown" type="button">Add to cart</button>
+            <label class="item__color--brown option__finish">Finish<span class="options__required"> *</span></label>
+            <label class="item__color--red"><span class="options__required">* </span>Required Fields</label>
+            <label class="option__button" for="black"><input name="optionResult" id="black" type="radio"
+                required>Black</label>
+            <label class="option__button" for="silver"><input name="optionResult" id="silver" type="radio"
+                required>Silver</label>
+            <div class="paymentcontent">
+              <label class="paymentcontent__color--brown">Qty</label>
+              <input class="paymentcontent__input" type="number">
+              <button class="paymentcontent__button item__color--bg-brown" type="button">Add to cart</button>
               <p class="paymentcontent__or">-OR-</p>
-              <img  class="paymentcontent__payment" alt="payment" src="img/buttonimg/paypalbutton.png">
+              <img class="paymentcontent__payment" alt="payment" src="img/buttonimg/paypalbutton.png">
               <p class="paymentcontent__payment--text">The safer, easier way to pay</p>
               <div class="paymentcontent__payment--divider"></div>
-              </div>
+            </div>
           </form>
+          <section class="product-additional-info">
+            <h2 class="product-additional-info__heading">additional information</h2>
+            <table class="product-additional-info__table">
+              <tr>
+                <th class="product-additional-info__table-heading">manufacturer</th>
+                <td class="product-additional-info__table-data">a</td>
+              </tr>
+              <tr>
+                <th class="product-additional-info__table-heading">manufacturer link</th>
+                <td class="product-additional-info__table-data">b</td>
+              </tr>
+              <tr>
+                <th class="product-additional-info__table-heading">free warranty</th>
+                <td class="product-additional-info__table-data">c</td>
+              </tr>
+              <tr>
+                <th class="product-additional-info__table-heading">delivery charge</th>
+                <td class="product-additional-info__table-data">d</td>
+              </tr>
+              <tr>
+                <th class="product-additional-info__table-heading">delivery time</th>
+                <td class="product-additional-info__table-data">e</td>
+              </tr>
+              <tr>
+                <th class="product-additional-info__table-heading">card surcharges</th>
+                <td class="product-additional-info__table-data">f</td>
+              </tr>
+            </table>
+          </section>
+          
         </div>
+      </section>
+      <section class="product-description">
+        <h2 class="product-description__heading">description</h2>
+        <table class="product-description__table">
+          <tr>
+            <th class="product-description__table-heading">Power Output (8 / 4 Ohm RMS)</th>
+            <td class="product-description__table-data">45 W / 60 W</td>
+            <td class="product-description__table-data">10 Hz</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Frequency Response</th>
+            <td class="product-description__table-data">X</td>
+            <td class="product-description__table-data">70 kHz</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Total Harmonic Distortion</th>
+            <td class="product-description__table-data">0.08%</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Damping Factor</th>
+            <td class="product-description__table-data">100</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Input Sensitivity MM</th>
+            <td class="product-description__table-data">2.2mV / 47 kOhm</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Input Sensitivity MC</th>
+            <td class="product-description__table-data">X</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Signal to Noise Ratio: MM / MC</th>
+            <td class="product-description__table-data">83 dB</td>
+            <td class="product-description__table-data">X</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Input Sensitivity: High level</th>
+            <td class="product-description__table-data">200 mV / 20 kOhm</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Input Sensitivity: Balanced High level</th>
+            <td class="product-description__table-data">X</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Signal to Noise Ratio: High level</th>
+            <td class="product-description__table-data">102dB(2V input)</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Input Sensitivity: Power Amp Direct IN</th>
+            <td class="product-description__table-data">X</td>
+          </tr>
+          <tr>
+            <th class="product-description__table-heading">Signal to Noise Ratio: Power Amp Direct IN</th>
+            <td class="product-description__table-data">X</td>
+          </tr>
+        </table>
       </section>
     </div>
 
-    <img class="placeholder__img" src="img/hifi-shop-single-product-view.png" alt="dummyimage">
-  </div>
+    <div class="main__call-us">
+      <p><i class="fa-solid fa-phone"></i>call us about this product</p>
+    </div>
 
-  <footer class="footer">
-    <div class="footer__left">
-      <!-- left -->
-      <div class="footer__left__text">
-        <p>
-          Hi-Fi Corner <br>
-          Edinburgh 2 Joppa Road EH15 2EU <br>
-          Falkirk 44 Cow Wynd FK1 1PU
-        </p>
+    <footer class="footer">
+      <div class="footer__left">
+        <!-- left -->
+        <div class="footer__left__text">
+          <p>
+            Hi-Fi Corner <br>
+            Edinburgh 2 Joppa Road EH15 2EU <br>
+            Falkirk 44 Cow Wynd FK1 1PU
+          </p>
+        </div>
+        <div class="footer__left__privacy">
+          <a href="">Returns & Refunds</a>
+          <p>|</p>
+          <a href="">Privacy Policy</a>
+        </div>
       </div>
-      <div class="footer__left__privacy">
-        <a href="">Returns & Refunds</a>
-        <p>|</p>
-        <a href="">Privacy Policy</a>
+      <div class="footer__right">
+        <!-- right -->
+        <div class="footer__right__payment">
+          <a href=""><img src="img/icons/worldpay.svg" alt="worldpay"></a>
+          <a href=""><img src="img/icons/visa.svg" alt="visa"></a>
+          <a href=""><img src="img/icons/maestro.svg" alt="mastercard"></a>
+          <a href=""><img src="img/icons/mastercard.svg" alt="matestro"></a>
+          <a href=""><img src="img/icons/jbc.svg" alt="jcb"></a>
+          <a href=""><img src="img/icons/paypal.svg" alt="paypal"></a>
+        </div>
+        <div class="footer__right__socials">
+          <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
+          <a href=""><img src="img/icons/youtube.svg" alt="youtube"></a>
+          <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+          <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
+        </div>
       </div>
-    </div>
-    <div class="footer__right">
-      <!-- right -->
-      <div class="footer__right__payment">
-        <a href=""><img src="img/icons/worldpay.svg" alt="worldpay"></a>
-        <a href=""><img src="img/icons/visa.svg" alt="visa"></a>
-        <a href=""><img src="img/icons/maestro.svg" alt="mastercard"></a>
-        <a href=""><img src="img/icons/mastercard.svg" alt="matestro"></a>
-        <a href=""><img src="img/icons/jbc.svg" alt="jcb"></a>
-        <a href=""><img src="img/icons/paypal.svg" alt="paypal"></a>
-      </div>
-      <div class="footer__right__socials">
-        <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
-        <a href=""><img src="img/icons/youtube.svg" alt="youtube"></a>
-        <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
-        <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
+
 </html>
