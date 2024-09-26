@@ -11,6 +11,13 @@
     background-size: cover;
 }
 
+.body-background--contact{
+    background-image: url(/img/baggrunde/contactbg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
 .dark-body{
     background-color: var(--black);
 }
