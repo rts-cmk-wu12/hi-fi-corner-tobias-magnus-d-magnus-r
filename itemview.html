@@ -85,8 +85,13 @@
     <div class="item">
       <div class="item__preview">
         <div class="preview-container">
-          <img id="preview-image" src="img/dvdafspillere/creek_classic.jpg" alt="preview">
+          <img class="preview-image" id="preview-image" src="img/dvdafspillere/creek_classic.jpg" alt="preview">
         </div>
+        <section class="item__more-views">
+          <h2 class="moreviews__heading">More views</h2>
+          <div class="moreviews__image-container" id="moreviews__image-container">
+          </div>
+        </section>
       </div>
 
       <section class="item__details">
@@ -111,7 +116,7 @@
             <button class="item__button item__color--bg-brown">Pay by finance</button>
             <button class="item__button item__color--bg-brown">Seen a better price?</button>
           </div>
-          <form class="form">
+          <form class="form" id="product-form">
             <label class="item__color--brown option__finish">Finish<span class="options__required"> *</span></label>
             <label class="item__color--red"><span class="options__required">* </span>Required Fields</label>
             <label class="option__button" for="black"><input name="optionResult" id="black" type="radio"
@@ -130,7 +135,7 @@
           </form>
           <section class="product-additional-info">
             <h2 class="product-additional-info__heading">additional information</h2>
-            <table class="product-additional-info__table">
+            <table id="product-table" class="product-additional-info__table">
               <tr>
                 <th class="product-additional-info__table-heading">manufacturer</th>
                 <td class="product-additional-info__table-data">a</td>
@@ -221,7 +226,7 @@
     <div class="main__call-us">
       <p><i class="fa-solid fa-phone"></i>call us about this product</p>
     </div>
-
+  </div>
     <footer class="footer">
       <div class="footer__left">
         <!-- left -->
