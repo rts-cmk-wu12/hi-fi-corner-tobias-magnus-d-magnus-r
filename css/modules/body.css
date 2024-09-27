@@ -1,0 +1,23 @@
+.body-background--amplifier{
+    background-image: url(/img/baggrunde/Colourbox-hifi-speaker.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.body-background--speakers{
+    background-image: url(/img/baggrunde/speakers.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.body-background--contact{
+    background-image: url(/img/baggrunde/contactbg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.dark-body{
+    background-color: var(--black);
+}
