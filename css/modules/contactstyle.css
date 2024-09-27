@@ -65,6 +65,9 @@
     height: 18.5rem;
     margin-bottom: 11.6rem;
 }
+.contact__info h2{
+    font-size: 2.3rem;
+}
 .contact__info__text{
     color: var(--white);
     font-size: 2rem;
@@ -78,4 +81,16 @@
     display: flex;
     align-items: center;
 
+}
+/* hover */
+
+.contact__form__item:hover{
+    font-size: 1rem;
+    transition-duration: 100ms;
+}
+.contact__info__div:hover{
+    transform: scale(1.1);
+    transition-duration: 100ms;
+    background-color: var(--black);
+    border: 0.2rem solid var(--black);
 }

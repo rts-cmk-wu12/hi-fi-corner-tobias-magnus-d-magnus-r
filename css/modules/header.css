@@ -125,3 +125,8 @@
     text-transform: uppercase;
     font-size: 0.8rem;
 }
+
+/* hover */
+.header__navigation-link:hover, .header__navigation-link--active:hover{
+    font-weight: bold;
+}
