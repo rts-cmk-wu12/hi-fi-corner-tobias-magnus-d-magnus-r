@@ -98,20 +98,20 @@ const productTable = document.querySelector('#product-table');
                 const staticLabels = `
                 <label class="item__color--brown option__finish">Finish<span class="options__required"> *</span></label>
                 <label class="item__color--red"><span class="options__required">* </span>Required Fields</label>`;
-                
+
                 while (productForm.children.length > 1) {
                     productForm.removeChild(productForm.firstChild);
                 }
-                
+
                 const labelContainer = document.createElement('div');
                 labelContainer.classList.add('option__button-container');
-                
-                
+
+
                 colors.forEach(color => {
                     moreViews.innerHTML += `
                     <img src="${color.imageSrc}" alt="product image" class="moreviews__image">
                     `;
-                    
+
                     // form options
                     const labelOptions = document.createElement('label');
                     labelOptions.classList.add('option__button')
@@ -119,10 +119,17 @@ const productTable = document.querySelector('#product-table');
                     labelOptions.innerHTML = `<input name="optionResult" id="${color.color}" type="radio" required>${color.color}`;
                     labelContainer.appendChild(labelOptions);
                 });
-                
+
                 productForm.insertAdjacentHTML('afterbegin', staticLabels);
                 productForm.insertBefore(labelContainer, productForm.lastChild);
                 console.log(labelContainer)
+
+                labelContainer.addEventListener('click', (e) => {
+                    if (e.target.tagName === 'INPUT') {
+                        const selectedColor = colors.find(color => color.color === e.target.id);
+                        productPreview.src = selectedColor.imageSrc;
+                    }
+                });
                 
             } else {
                 moreViewsContainerElement.style.display = 'none';
@@ -130,6 +137,12 @@ const productTable = document.querySelector('#product-table');
                     productForm.removeChild(productForm.firstChild);
                 }
             };
+
+            moreViewsContainerElement.addEventListener('click', (e) => {
+                if (e.target.tagName === 'IMG') {
+                    productPreview.src = e.target.src;
+                }
+            });
         }
     });
 })();
