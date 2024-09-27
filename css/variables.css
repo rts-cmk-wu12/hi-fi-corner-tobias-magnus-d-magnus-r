@@ -1,0 +1,43 @@
+@font-face {
+    font-family: "font-light";
+    src: url(../fonts/museo-sans-rounded-webfont/MuseoSansRounded300.woff);
+}
+@font-face {
+    font-family: "font-normal";
+    src: url(../fonts/museo-sans-rounded-webfont/MuseoSansRounded500.woff);
+}
+@font-face {
+    font-family: "font-bold";
+    src: url(../fonts/museo-sans-rounded-webfont/MuseoSansRounded700.woff);
+}
+@font-face {
+    font-family: "font-extra-bold";
+    src: url(../fonts/museo-sans-rounded-webfont/MuseoSansRounded900.woff);
+}
+
+:root{
+    /* colors */
+    --light-brownish: #c0ab9f;
+    --light-brown:#a39161;
+    --dark-brown:#685225;
+    --prev-next-button: #c0ab9f;
+    --red:#ff0000;
+    --gray:#e1e1e1;
+    --medium-gray: #4d4d4d;
+    --black:#000;
+    --dark-gray: #111111;
+    --white: #fff;
+    --blue: #1daaf3;
+    
+    /* Transparent */
+    --black-transparent:#00000080;
+
+    /* font family */
+    --font-light: 'font-light';
+    --font-normal: 'font-normal';
+    --font-bold: 'font-bold';
+    --font-extra-bold: 'font-extra-bold';
+
+    /* filter */
+    --filter-invert: invert();
+}

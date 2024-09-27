@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hifi - Homepage</title>
+    <!-- Fontawesome cdn import -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/carousel.js" defer></script>
+</head>
+
+<body class="body-background--amplifier">
+    <header class="header"> <!-- InformationBar-->
+        <div class="header__information">
+            <div class="header__information-container">
+                <a class="header__link" href="https://maps.app.goo.gl/Ev5athXpk7HgQfLQA">
+                    <img class="header__image" src="img/icons/location.svg" alt="Location">
+                </a>
+                
+                <a class="header__link" href="tel:0000000000">
+                    <img class="header__image" src="img/icons/phone.svg" alt="Phone">
+                </a>
+                
+                <a class="header__link" href="mailto:email@example.com">
+                    <img class="header__image" src="img/icons/mail.svg" alt="Mail">
+                </a>
+
+                <button class="header__subscription">
+                    <img class="header__subscription-image" src="img/icons/subscribe.svg" alt="subscribe">
+                    Subscribe
+                </button>
+            </div>
+        </div>
+        <nav class="header__navigation"> <!-- Navbar -->
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item"><a class="header__navigation-link header__navigation-link--active" href="index.html">home</a></li>
+                <li class="header__navigation-item"><a class="header__navigation-link" href="?nosite">about us</a></li>
+                <li class="header__navigation-item"><a class="header__navigation-link" href="brands.html">brands</a></li>
+                <li class="header__navigation-item"><a class="header__navigation-link" href="?nosite">news</a></li>
+                <li class="header__navigation-item"><a class="header__navigation-link" href="?nosite">events</a></li>
+                <li class="header__navigation-item"><a class="header__navigation-link" href="shop-frontpage.html">shop</a></li>
+                <li class="header__navigation-item"><a class="header__navigation-link" href="contact.html">contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="logo">
+            <img class="logo__image" src="img/random/hifi-logo.svg" alt="hifi logo">
+            <p class="logo__text">hificorner.co.uk</p>
+        </div>
+
+        <section class="hero">
+            <h2 class="hero__text">our edingburgh showroom has now moved
+                <br>to stunning new premises on joppa road
+            </h2>
+        </section>
+
+        <section class="carousel" aria-label="Image carousel">
+            <button class="carousel__button carousel__button--previous"><i class="fa-solid fa-angle-left"></i></button>
+            <ul class="carousel__track">
+                <!-- Dynamic content -->
+            </ul>
+            <button class="carousel__button carousel__button--next"><i class="fa-solid fa-angle-right"></i></button>
+        </section>
+
+
+        <div class="socialDiv">
+            <div class="facebook-div socialDiv__item"><img src="img/icons/facebook-big.svg" alt="facebook"></div>
+            <div class="b-div socialDiv__item"><img src="img/icons/b-big.svg" alt="b social"></div>
+            <div class="twitter-div socialDiv__item"><img src="img/icons/twitter-big.svg" alt="twitter"></div>
+        </div>
+        <div class="socialDivInfo">
+            <div class="socialDivInfo__history">
+                <a href="">
+                    <h3>history</h3>
+                </a>
+                <p>established in the late 1960s, our family owned business is based in edinburgh and falkirk, servicing
+                    customers across the uk.</p>
+            </div>
+            <div class="socialDivInfo__news">
+                <a href="">
+                    <h3>news</h3>
+                </a>
+                <p>check out our latest news stories for all the up to date hi-fi corner products and launches.</p>
+            </div>
+            <div class="socialDivInfo__shop">
+                <a href="">
+                    <h3>shop</h3>
+                </a>
+                <p>have a look in our online shop for great products and deals</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__left">
+            <!-- left -->
+            <div class="footer__left__text">
+                <p>Hi-Fi Corner <br> Edinburgh 2 Joppa Road EH15 2EU <br> Falkirk 44 Cow Wynd FK1 1PU</p>
+            </div>
+            <div class="footer__left__privacy">
+                <a href="">Returns & Refunds</a>
+                <p>|</p>
+                <a href="">Privacy Policy</a>
+            </div>
+        </div>
+        <div class="footer__right">
+            <!-- right -->
+            <div class="footer__right__payment">
+                <a href=""><img src="img/icons/worldpay.svg" alt="worldpay"></a>
+                <a href=""><img src="img/icons/visa.svg" alt="visa"></a>
+                <a href=""><img src="img/icons/maestro.svg" alt="mastercard"></a>
+                <a href=""><img src="img/icons/mastercard.svg" alt="matestro"></a>
+                <a href=""><img src="img/icons/jbc.svg" alt="jcb"></a>
+                <a href=""><img src="img/icons/paypal.svg" alt="paypal"></a>
+            </div>
+            <div class="footer__right__socials">
+                <a href=""><img src="img/icons/facebook.svg" alt="facebook"></a>
+                <a href=""><img src="img/icons/youtube.svg" alt="youtube"></a>
+                <a href=""><img src="img/icons/twitter.svg" alt="twitter"></a>
+                <a href=""><img src="img/icons/instagram.svg" alt="instagram"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
