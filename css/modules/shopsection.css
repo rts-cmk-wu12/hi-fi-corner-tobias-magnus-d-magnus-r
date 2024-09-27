@@ -16,23 +16,40 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
-    /* padding: 0 20px 0 20px; */
     height: 100%;
 }
 
-
-
-.item__preview div img {
-    height: auto;
-    width: 100%;
-    padding: 10%;
-    min-width: 50px;
+.preview-container {
+    display: flex;
+    justify-content: center;
+    border: solid rgba(187, 187, 187, 0.326) 0.5px;
 }
 
+.preview-image{
+    object-fit: contain;
+    width: 35rem;
+    height: 35rem;
+}
 
+.item__more-views{
+    margin-top: 1rem;
+}
 
-.preview-container {
-    border: solid rgba(187, 187, 187, 0.326) 0.5px;
+.moreviews__heading{
+    font-family: var(--font-bold);
+    color: var(--light-brown);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.moreviews__image-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.moreviews__image{
+    margin-top: 2rem;
+    max-width: 6rem;
 }
 
 /*  Color Classes */
@@ -68,25 +85,22 @@
     font-size: 1.5rem;
 }
 
+
 .selection {
     display: flex;
     column-gap: 0.5rem;
     width: 80%;
 }
 
-
 .item__color--bg-brown {
     background-color: var(--light-brown);
     font-family: var(--font-normal);
     color: aliceblue;
     text-transform: uppercase;
-    padding: 0 5px 0 5px;
-    appearance: none;
-    outline: none;
+    padding: 1rem;
     border: none;
-    width: 100%;
-    height: 100%;
     cursor: pointer;
+    margin-bottom: 0.5rem;
 }
 
 .item__color--red {
@@ -115,11 +129,6 @@
     align-items: center;
 }
 
-.placeholder__img {
-    padding: 2%;
-    width: 500px;
-}
-
 
 /* Form */
 
@@ -128,7 +137,6 @@
     display: grid;
     grid-template-rows: repeat(3, max-content);
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 1rem;
     justify-items: left;
     border: solid 2px;
 }
@@ -137,13 +145,21 @@
     color: var(--red);
 }
 
+
+.option__button-container {
+    margin-block: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
 .option__button {
     cursor: pointer;
     margin-left: 20px;
-    padding: 2%;
+    padding: 0.5rem;
     background-color: var(--gray);
     width: 100%;
     max-width: 225px;
+    margin-top: 1rem;
 }
 
 .option__finish {
@@ -206,6 +222,9 @@
 .paymentcontent__button {
     width: 140px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -250,6 +269,7 @@
     text-align: left;
     text-transform: uppercase;
     border-collapse: collapse;
+    margin-top: 1rem;
 }
 
 .product-additional-info__heading {
